@@ -1,36 +1,24 @@
 "use client";
 
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
-import Header from "./(landingPage)/components/Header";
-import { HeroSection } from "./(landingPage)/components/HeroSection";
-import { Features } from "./(landingPage)/components/Features";
-import { Stats } from "./(landingPage)/components/Stats";
-import { Testimonial } from "./(landingPage)/components/Testimonials";
-import { Process } from "./(landingPage)/components/Process";
-import { ContactForm } from "./(landingPage)/components/Contact";
-import { MobileMenu } from "./(landingPage)/components/MobileMenu";
-import { Footer } from "./(landingPage)/components/Footer";
+import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
+import { HeroSection } from "./components/HeroSection";
+import { LeadForm } from "./components/LeadForm";
+import { ServicesSection } from "./components/ServicesSection";
+import { WhyChoose } from "./components/WhyChoose";
+import { MarketingServices } from "./components/MarketingServices";
+import { CourseSection } from "./components/CourseSection";
 
-export default function LandingPage() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <AnimatePresence>
-        {isMenuOpen && <MobileMenu setIsMenuOpen={setIsMenuOpen} />}
-      </AnimatePresence>
-
-      <main>
-        <HeroSection />
-        <Stats />
-        <Features />
-        <Testimonial />
-        <Process />
-        <ContactForm />
-      </main>
-
+    <div>
+      <Navbar />
+      <HeroSection />
+      <ServicesSection />
+      <CourseSection />
+      <MarketingServices />
+      <WhyChoose />
+      <LeadForm />
       <Footer />
     </div>
   );
