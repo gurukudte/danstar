@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
@@ -12,8 +13,8 @@ export default function Footer() {
               <Image
                 src="/logo.png" // Note: path is relative to public folder
                 alt="logo"
-                width={100}
-                height={50}
+                width={200}
+                height={150}
               />
             </Link>
             <p className="text-gray-400">
@@ -38,26 +39,18 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Admission Support
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Internship Placement
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Consultancy
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Training & Soft Skills
-                </Link>
-              </li>
+              {[
+                " Admission Support",
+                "Internship Placement",
+                "Consultancy",
+                "Training & Soft Skills",
+              ].map((service) => (
+                <li key={service}>
+                  <Link href="#" className="text-gray-400 hover:text-white">
+                    {service}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

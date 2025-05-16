@@ -62,6 +62,22 @@ module.exports = {
           800: "#424242",
           900: "#212121",
         },
+        // success: {
+        //   DEFAULT: "var(--success)",
+        //   foreground: "var(--success-foreground)",
+        // },
+        // destructive: {
+        //   DEFAULT: "var(--destructive)",
+        //   foreground: "var(--destructive-foreground)",
+        // },
+        // warning: {
+        //   DEFAULT: "var(--warning)",
+        //   foreground: "var(--warning-foreground)",
+        // },
+        // info: {
+        //   DEFAULT: "var(--info)",
+        //   foreground: "var(--info-foreground)",
+        // },
       },
       animation: {
         "pulse-slow": "pulse 6s infinite cubic-bezier(0.4, 0, 0.6, 1)",
