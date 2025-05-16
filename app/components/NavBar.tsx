@@ -10,7 +10,7 @@ export default function Navbar() {
     "text-sm font-medium text-primary hover:text-secondary transition-colors";
   return (
     <header className="px-4 sticky top-0 z-50 w-full border-b bg-[#FEFEFE]/95 backdrop-blur supports-[backdrop-filter]:bg-[#FEFEFE]/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="flex h-16 items-center justify-between">
         <Link href="/" className="p-4 flex items-center space-x-2">
           {/* <span className="text-xl font-bold text-[#034D7A]">DANSTAR</span> */}
           <Image

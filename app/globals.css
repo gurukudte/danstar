@@ -59,7 +59,21 @@
   --accent: #ffc107; /* accent-500 */
   --accent-foreground: 0 0 0; /* black */
 
-  --destructive: 220 38 38; /* red-600 */
+  /* Success - Green */
+  --success: #16a34a;
+  --success-foreground: #f0fdf4;
+
+  /* Error - Red */
+  --destructive: #dc2626;
+  --destructive-foreground: #fef2f2;
+
+  /* Warning - Amber */
+  --warning: #d97706;
+  --warning-foreground: #fffbeb;
+
+  /* Info - Blue */
+  --info: #2563eb;
+  --info-foreground: #eff6ff;
 
   --border: #e5e7eb; /* neutral-200 */
   --input: #e5e7eb; /* neutral-200 */
@@ -89,7 +103,17 @@
   --accent: 255 213 79; /* accent-300 */
   --accent-foreground: 0 0 0; /* black */
 
-  --destructive: 220 38 38; /* red-600 */
+  --success: #22c55e;
+  --success-foreground: #052e16;
+
+  --destructive: #b91c1c;
+  --destructive-foreground: #450a0a;
+
+  --warning: #f59e0b;
+  --warning-foreground: #451a03;
+
+  --info: #3b82f6;
+  --info-foreground: #172554;
 
   --border: 51 51 51; /* neutral-700 */
   --input: 51 51 51; /* neutral-700 */

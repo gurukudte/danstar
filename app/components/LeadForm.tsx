@@ -15,12 +15,17 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+import { useAppDispatch } from "@/redux/hooks";
+import { addLead } from "../dashboard/leads/leadSlice";
 // Form validation schema
 const leadFormSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  fullName: z
+    .string()
+    .min(2, { message: "Name must be at least 2 characters" }),
   email: z.string().email({ message: "Invalid email address" }),
   phone: z.string().min(10, { message: "Phone must be at least 10 digits" }),
-  serviceInterest: z.string().min(1, { message: "Please select a service" }),
+  serviceType: z.string().min(1, { message: "Please select a service" }),
   message: z.string().optional(),
 });
 
@@ -66,20 +71,29 @@ export const services = [
 ];
 
 export function LeadForm() {
+  const dispatch = useAppDispatch();
   const form = useForm<LeadFormValues>({
     resolver: zodResolver(leadFormSchema),
     defaultValues: {
-      name: "",
+      fullName: "",
       email: "",
       phone: "",
-      serviceInterest: "",
+      serviceType: "",
       message: "",
     },
   });
-  const onSubmit = (data: LeadFormValues) => {
-    console.log(data); // Replace with your submission logic
-    alert("Thank you for your interest! We will contact you soon.");
-    form.reset();
+  const onSubmit = async (data: LeadFormValues) => {
+    try {
+      // Dispatch the addLead action and unwrap the result
+      await dispatch(addLead(data)).unwrap();
+
+      // Only show success toast and reset if the API call succeeds
+      toast.success("Thank you for your interest! We will contact you soon.");
+      form.reset();
+    } catch (err) {
+      const error = err as { message?: string };
+      toast.error(error.message || "Failed to submit form. Please try again.");
+    }
   };
   return (
     <section className="py-20 bg-secondary-50">
@@ -114,14 +128,14 @@ export function LeadForm() {
                   <input
                     id="name"
                     type="text"
-                    {...form.register("name")}
+                    {...form.register("fullName")}
                     className="pl-10 block w-full rounded-md  shadow-sm  py-3"
                     placeholder="John Doe"
                   />
                 </div>
-                {form.formState.errors.name && (
-                  <p className="mt-1 text-sm text-primary-600">
-                    {form.formState.errors.name.message}
+                {form.formState.errors.fullName && (
+                  <p className="mt-1 text-sm text-destructive">
+                    {form.formState.errors.fullName.message}
                   </p>
                 )}
               </div>
@@ -146,7 +160,7 @@ export function LeadForm() {
                   />
                 </div>
                 {form.formState.errors.email && (
-                  <p className="mt-1 text-sm text-primary-600">
+                  <p className="mt-1 text-sm text-destructive">
                     {form.formState.errors.email.message}
                   </p>
                 )}
@@ -160,19 +174,21 @@ export function LeadForm() {
                   Phone <span className="text-primary">*</span>
                 </label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-secondary-400">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center justify-center gap-2 pointer-events-none text-secondary-400">
                     <FaPhone className="h-5 w-5" />
+                    <span>+91</span>
                   </div>
                   <input
                     id="phone"
-                    type="tel"
+                    type="number"
+                    maxLength={10}
                     {...form.register("phone")}
-                    className="pl-10 block w-full rounded-md shadow-sm  py-3"
-                    placeholder="+91 9876543210"
+                    className=" pl-18 block w-full rounded-md shadow-sm  py-3"
+                    placeholder="9876543210"
                   />
                 </div>
                 {form.formState.errors.phone && (
-                  <p className="mt-1 text-sm text-primary-600">
+                  <p className="mt-1 text-sm text-destructive">
                     {form.formState.errors.phone.message}
                   </p>
                 )}
@@ -187,8 +203,8 @@ export function LeadForm() {
                 Service of Interest <span className="text-primary">*</span>
               </label>
               <select
-                id="serviceInterest"
-                {...form.register("serviceInterest")}
+                id="serviceType"
+                {...form.register("serviceType")}
                 className="block w-full rounded-md shadow-sm py-3"
               >
                 <option value="">Select a service</option>
@@ -202,9 +218,9 @@ export function LeadForm() {
                   </option>
                 ))}
               </select>
-              {form.formState.errors.serviceInterest && (
-                <p className="mt-1 text-sm text-primary-600">
-                  {form.formState.errors.serviceInterest.message}
+              {form.formState.errors.serviceType && (
+                <p className="mt-1 text-sm text-destructive">
+                  {form.formState.errors.serviceType.message}
                 </p>
               )}
             </div>

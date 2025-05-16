@@ -1,52 +1,86 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import * as React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 to-secondary-50">
-      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <section className="relative w-full overflow-hidden">
+      {/* Blended Background Container */}
+      <div className="absolute inset-0 z-0">
+        {/* Background Image */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary">
-            EMPOWERING THE FUTURE{" "}
-            <span className="text-secondary-600">OF HEALTHCARE</span>
-          </h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-6 text-lg md:text-xl text-secondary-foreground max-w-3xl mx-auto"
-          >
-            Comprehensive solutions to empower healthcare organizations,
-            institutions, and professionals to excel.
-          </motion.p>
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat"
+          aria-hidden="true"
+        ></motion.div>
+
+        {/* Gradient Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/0.5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent lg:hidden" />
+      </div>
+
+      {/* Content Container */}
+      <div className="container relative z-10 mx-auto flex h-full min-h-screen px-4 sm:px-6 lg:px-8 ">
+        <div className="flex w-full flex-col items-center lg:flex-row lg:items-center">
+          {/* Text Content - Left Side */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-10 flex flex-col sm:flex-row justify-center gap-4"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full py-24 lg:w-1/2 lg:py-32 xl:pr-16"
           >
-            <Button
-              variant="outline"
-              className="text-primary hover:bg-primary-700 px-8 py-6 text-lg font-semibold"
-            >
-              Explore Services <IoMdArrowForward className="ml-2" />
-            </Button>
-            <Button
-              //   variant="outline"
-              className="text-background hover:bg-primary-50 px-8 py-6 text-lg font-semibold"
-            >
-              Contact Us
-            </Button>
+            <div className="max-w-2xl space-y-6">
+              <motion.h1
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+              >
+                EMPOWERING THE FUTURE{" "}
+                <span className="text-primary">OF HEALTHCARE</span>
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-lg leading-8 text-secondary-foreground md:text-xl"
+              >
+                Comprehensive solutions to empower healthcare organizations,
+                institutions, and professionals to excel.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="flex flex-col gap-4 sm:flex-row sm:items-center"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="cursor-pointer group text-lg font-semibold hover:text-primary"
+                >
+                  Explore Services
+                  <IoMdArrowForward className="ml-2 transition-transform group-hover:translate-x-1" />
+                </Button>
+                <Button
+                  size="lg"
+                  className="cursor-pointer text-lg font-semibold text-background"
+                >
+                  Contact Us
+                </Button>
+              </motion.div>
+            </div>
           </motion.div>
-        </motion.div>
+
+          {/* Spacer for Right Side - Shows blended background */}
+          {/* <div className="hidden w-full lg:block lg:w-1/2" /> */}
+        </div>
       </div>
     </section>
   );
