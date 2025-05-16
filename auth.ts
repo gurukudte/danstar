@@ -3,7 +3,11 @@ import authConfig from "./auth.config";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { db } from "./lib/db";
 import { getUserById } from "./data/user";
-import { Role } from "@prisma/client";
+enum Role {
+  SUPERADMIN = "SUPERADMIN",
+  ADMIN = "ADMIN",
+  USER = "USER",
+}
 declare module "next-auth" {
   interface Session {
     user: {
