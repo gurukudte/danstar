@@ -6,9 +6,14 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { User as NextAuthUser } from "next-auth";
 import { useSession } from "next-auth/react";
-import { Role } from "@prisma/client";
+
 import { NavItem } from "./components/NavItem";
 import { Header } from "./components/Header";
+enum Role {
+  SUPERADMIN = "SUPERADMIN",
+  ADMIN = "ADMIN",
+  USER = "USER",
+}
 export interface Session {
   user: {
     id: string;
