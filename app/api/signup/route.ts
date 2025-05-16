@@ -2,8 +2,12 @@ import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { SignupSchema } from "@/schemas";
 import { db } from "@/lib/db";
-import { Role } from "@prisma/client";
 import { getUserByEmail } from "@/data/user";
+enum Role {
+  SUPERADMIN = "SUPERADMIN",
+  ADMIN = "ADMIN",
+  USER = "USER",
+}
 
 export async function POST(req: Request) {
   try {
