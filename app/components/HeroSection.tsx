@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
 
 export function HeroSection() {
@@ -65,15 +66,18 @@ export function HeroSection() {
                   variant="outline"
                   className="cursor-pointer group text-lg font-semibold hover:text-primary"
                 >
-                  Explore Services
+                  <Link href="#services">Explore Services</Link>
                   <IoMdArrowForward className="ml-2 transition-transform group-hover:translate-x-1" />
                 </Button>
-                <Button
+                <Button asChild className=" hover:bg-secondary text-white">
+                  <Link href="#contact">Contact Us</Link>
+                </Button>
+                {/* <Button
                   size="lg"
                   className="cursor-pointer text-lg font-semibold text-background"
                 >
                   Contact Us
-                </Button>
+                </Button> */}
               </motion.div>
             </div>
           </motion.div>

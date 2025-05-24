@@ -8,10 +8,10 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Link href="/" className="p-4 flex items-center space-x-2">
+            <Link href="/" className="mb-4 flex items-center space-x-2">
               {/* <span className="text-xl font-bold text-[#034D7A]">DANSTAR</span> */}
               <Image
-                src="/logo.png" // Note: path is relative to public folder
+                src="/logo2.png" // Note: path is relative to public folder
                 alt="logo"
                 width={200}
                 height={150}
@@ -82,7 +82,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="text-gray-400 not-italic">
               <p>Email: info@danstar.in</p>
-              <p>Phone: +91 9633346168</p>
+              <p>Phone: +91 9740568622</p>
               <p>Website: www.danstar.in</p>
             </address>
           </div>
