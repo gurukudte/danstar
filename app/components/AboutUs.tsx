@@ -54,7 +54,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
@@ -111,7 +111,7 @@ const AboutUs = () => {
                 <motion.div
                   key={index}
                   whileHover={{ y: -5 }}
-                  className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm text-primary"
+                  className="flex items-center w-[30rem] gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm text-primary"
                 >
                   {feature.icon}
                   <div>

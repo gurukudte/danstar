@@ -9,6 +9,7 @@ import { WhyChoose } from "./components/WhyChoose";
 import { MarketingServices } from "./components/MarketingServices";
 import { CourseSection } from "./components/CourseSection";
 import AboutUs from "./components/AboutUs";
+import { Testimonials } from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <CourseSection />
       <MarketingServices />
       <WhyChoose />
+      <Testimonials />
       <LeadForm />
       <Footer />
     </div>
