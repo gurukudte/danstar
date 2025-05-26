@@ -13,7 +13,7 @@ import { Testimonials } from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col">
       <Navbar />
       <HeroSection />
       <AboutUs />
