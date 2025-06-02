@@ -4,20 +4,20 @@ import { Quote } from "lucide-react";
 import {
   FaUserNurse,
   FaUserMd,
-  FaUserGraduate,
-  FaRunning,
-  FaUserShield,
-  FaUserAlt,
+  FaLaptopCode,
+  FaUserTie,
+  FaGlobe,
+  FaChartLine,
 } from "react-icons/fa";
 
 export const Testimonials = () => {
   const TESTIMONIALS = [
     {
       id: 1,
-      name: "Priya Sharma",
-      role: "BSc Nursing Student, St. John's",
+      name: "Dr. Priya Sharma",
+      role: "Nursing Informatics Specialist",
       content:
-        "Danstar helped me secure admission in my dream nursing college with scholarship. Their counselors understood my needs perfectly and guided me through every step.",
+        "Danstar's AI for Healthcare course transformed my career. I now implement digital solutions in my hospital, improving patient care through technology.",
       rating: 5,
       icon: FaUserNurse,
       iconColor: "text-pink-500",
@@ -26,9 +26,9 @@ export const Testimonials = () => {
     {
       id: 2,
       name: "Rahul Patel",
-      role: "MBBS Student, KIMS",
+      role: "Clinical Research Associate",
       content:
-        "From entrance exam preparation to final admission, Danstar supported me at every step. Their expertise in medical admissions is unmatched in Bangalore.",
+        "The AI for Drug Discovery program gave me cutting-edge skills that helped me transition from pharmacy to a high-growth research role.",
       rating: 5,
       icon: FaUserMd,
       iconColor: "text-blue-500",
@@ -37,44 +37,44 @@ export const Testimonials = () => {
     {
       id: 3,
       name: "Ananya Gupta",
-      role: "MHA Student, TISS",
+      role: "Healthcare Administrator (UK)",
       content:
-        "The career counseling session was eye-opening. I wouldn't have considered Hospital Management without their expert advice. Truly transformed my career path!",
+        "Danstar's study abroad guidance and internship placement helped me build an international career in hospital management.",
       rating: 5,
-      icon: FaUserGraduate,
+      icon: FaGlobe,
       iconColor: "text-purple-500",
       bgColor: "bg-purple-100",
     },
     {
       id: 4,
       name: "Arjun Reddy",
-      role: "BPT Student, MS Ramaiah",
+      role: "Physiotherapy AI Specialist",
       content:
-        "Danstar made the admission process so smooth. They handled all documentation and even helped me secure an education loan. Highly recommended for physiotherapy admissions!",
+        "The AI for Physiotherapists course revolutionized my practice. I now use motion analysis software to enhance treatment plans.",
       rating: 5,
-      icon: FaRunning,
+      icon: FaLaptopCode,
       iconColor: "text-green-500",
       bgColor: "bg-green-100",
     },
     {
       id: 5,
       name: "Meera Desai",
-      role: "Parent of Pharmacy Student",
+      role: "Nursing Director",
       content:
-        "As parents, we were confused about college options. Danstar's transparent guidance helped us choose the best pharmacy college for our daughter within our budget.",
+        "Danstar's digital marketing services helped our college increase enrollment by 40% through targeted campaigns and SEO optimization.",
       rating: 5,
-      icon: FaUserShield,
+      icon: FaUserTie,
       iconColor: "text-orange-500",
       bgColor: "bg-orange-100",
     },
     {
       id: 6,
       name: "Dr. Vikram Joshi",
-      role: "BAMS Graduate, SDM",
+      role: "Ayurveda AI Researcher",
       content:
-        "Danstar's strong relationships with Ayurveda colleges helped me get into a top institution. Their scholarship guidance saved me 30% in tuition fees.",
+        "The AI for Ayurveda course helped me bridge traditional medicine with modern technology. We're now developing diagnostic tools using Danstar's training.",
       rating: 5,
-      icon: FaUserAlt,
+      icon: FaChartLine,
       iconColor: "text-red-500",
       bgColor: "bg-red-100",
     },
@@ -91,12 +91,12 @@ export const Testimonials = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold text-secondary mb-4">
-            Success <span className="text-primary">Stories</span>
+            Healthcare <span className="text-primary">Success Stories</span>
           </h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Hear from students who achieved their academic dreams with our
-            guidance
+            Hear how we're transforming healthcare careers through education,
+            technology, and global opportunities
           </p>
         </motion.div>
 

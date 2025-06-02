@@ -2,65 +2,95 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
-  BookOpen,
   Stethoscope,
   Pill,
   Activity,
-  Brain,
-  HeartPulse,
   Bone,
+  Cpu,
+  Database,
+  Leaf,
+  Armchair,
+  TestTube2,
+  Microscope,
 } from "lucide-react";
 import Link from "next/link";
 
 export function CourseSection() {
   const healthcareCourses = [
+    // Traditional Healthcare Courses
     {
       name: "BSc Nursing",
       icon: <Stethoscope className="w-5 h-5" />,
       duration: "4 Years",
-      colleges: ["NIMHANS", "St. John's", "MS Ramaiah"],
+      category: "Healthcare Programs",
     },
     {
       name: "Allied Health Sciences",
       icon: <Activity className="w-5 h-5" />,
       duration: "3-4 Years",
-      colleges: ["Manipal", "Yenepoya", "JSS"],
+      category: "Healthcare Programs",
     },
     {
       name: "Pharmacy",
       icon: <Pill className="w-5 h-5" />,
       duration: "4 Years",
-      colleges: ["KLE", "Al-Ameen", "JSS"],
+      category: "Healthcare Programs",
     },
     {
       name: "Physiotherapy (BPT)",
       icon: <Bone className="w-5 h-5" />,
       duration: "4.5 Years",
-      colleges: ["KIMS", "SDM", "Yenepoya"],
+      category: "Healthcare Programs",
     },
     {
       name: "Ayurveda (BAMS)",
-      icon: <HeartPulse className="w-5 h-5" />,
+      icon: <Leaf className="w-5 h-5" />,
       duration: "5.5 Years",
-      colleges: ["SDM", "AYUSH", "KLE"],
-    },
-    {
-      name: "Hospital Administration",
-      icon: <BookOpen className="w-5 h-5" />,
-      duration: "2 Years",
-      colleges: ["TISS", "Apollo", "IIHMR"],
+      category: "Healthcare Programs",
     },
     {
       name: "Medical Lab Technology",
-      icon: <Brain className="w-5 h-5" />,
+      icon: <Microscope className="w-5 h-5" />,
       duration: "3 Years",
-      colleges: ["Manipal", "CMC Vellore", "AIIMS"],
+      category: "Healthcare Programs",
+    },
+
+    // AI and Specialized Courses
+    {
+      name: "AI for Drug Discovery",
+      icon: <TestTube2 className="w-5 h-5" />,
+      duration: "6 Months",
+      category: "AI Courses",
     },
     {
-      name: "MBBS",
-      icon: <Stethoscope className="w-5 h-5" />,
-      duration: "5.5 Years",
-      colleges: ["KIMS", "MS Ramaiah", "JIPMER"],
+      name: "AI for Ayurveda",
+      icon: <Leaf className="w-5 h-5" />,
+      duration: "4 Months",
+      category: "AI Courses",
+    },
+    {
+      name: "AI for Physiotherapists",
+      icon: <Armchair className="w-5 h-5" />,
+      duration: "3 Months",
+      category: "AI Courses",
+    },
+    {
+      name: "Nursing Informatics",
+      icon: <Database className="w-5 h-5" />,
+      duration: "5 Months",
+      category: "Specialized Courses",
+    },
+    {
+      name: "Nursing Forensics",
+      icon: <Microscope className="w-5 h-5" />,
+      duration: "4 Months",
+      category: "Specialized Courses",
+    },
+    {
+      name: "AI for Beginners",
+      icon: <Cpu className="w-5 h-5" />,
+      duration: "3 Months",
+      category: "AI Courses",
     },
   ];
 
@@ -93,7 +123,7 @@ export function CourseSection() {
             variants={fadeIn}
             className="text-3xl sm:text-4xl font-bold text-secondary mb-4"
           >
-            Healthcare <span className="text-primary">Courses</span>
+            Healthcare <span className="text-primary">Programs & Courses</span>
           </motion.h2>
           <motion.div
             variants={fadeIn}
@@ -103,59 +133,95 @@ export function CourseSection() {
             variants={fadeIn}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Specialized admission guidance for top healthcare programs in
-            Bangalore and across India
+            Comprehensive healthcare education programs and cutting-edge AI
+            courses for modern healthcare professionals
           </motion.p>
         </motion.div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={staggerContainer}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-        >
-          {healthcareCourses.map((course, index) => (
-            <motion.div
-              key={index}
-              variants={fadeIn}
-              whileHover={{ y: -5 }}
-              className="bg-card p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-border hover:border-primary/30"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
-                  {course.icon}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-secondary mb-1">
-                    {course.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Duration: {course.duration}
-                  </p>
-                  <div className="mt-2">
-                    <h4 className="text-xs font-medium text-muted-foreground mb-1">
-                      Top Colleges:
-                    </h4>
-                    <p className="text-sm text-secondary">
-                      {course.colleges.join(", ")}
-                    </p>
+        {/* Course Categories */}
+        <div className="mb-12">
+          <h3 className="text-xl font-semibold text-secondary mb-6">
+            Healthcare Degree Programs
+          </h3>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={staggerContainer}
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+          >
+            {healthcareCourses
+              .filter((c) => c.category === "Healthcare Programs")
+              .map((course, index) => (
+                <motion.div
+                  key={index}
+                  variants={fadeIn}
+                  whileHover={{ y: -5 }}
+                  className="bg-card p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-border hover:border-primary/30"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                      {course.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-secondary mb-1">
+                        {course.name}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Duration: {course.duration}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                </motion.div>
+              ))}
+          </motion.div>
+
+          <h3 className="text-xl font-semibold text-secondary mb-6">
+            AI & Specialized Courses
+          </h3>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={staggerContainer}
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {healthcareCourses
+              .filter((c) => c.category !== "Healthcare Programs")
+              .map((course, index) => (
+                <motion.div
+                  key={index}
+                  variants={fadeIn}
+                  whileHover={{ y: -5 }}
+                  className="bg-card p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-border hover:border-primary/30"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                      {course.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-secondary mb-1">
+                        {course.name}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Duration: {course.duration}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+          </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-center mt-16"
+          className="text-center mt-8"
         >
           <Button asChild className="bg-primary hover:bg-primary/90 text-white">
-            <Link href="#contact">Get Complete Course List</Link>
+            <Link href="#contact">Explore All Courses & Programs</Link>
           </Button>
         </motion.div>
       </div>

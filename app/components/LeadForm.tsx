@@ -4,13 +4,15 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import {
-  FaBookOpen,
+  FaBrain,
   FaBriefcase,
   FaClipboardList,
   FaEnvelope,
+  FaGlobe,
   FaGraduationCap,
+  FaLaptopMedical,
+  FaMicroscope,
   FaPhone,
-  FaRocket,
   FaUser,
   FaUsers,
 } from "react-icons/fa";
@@ -48,37 +50,49 @@ export const services = [
     icon: <FaGraduationCap className="w-6 h-6" />,
     title: "Admission Support",
     description:
-      "Innovative recruitment strategies and targeted marketing campaigns designed to connect you with passionate students.",
+      "Specialized in innovative recruitment strategies for healthcare education",
   },
   {
     icon: <FaBriefcase className="w-6 h-6" />,
     title: "Internship Placement",
     description:
-      "Diverse internships across industries matching your skills with leading companies.",
+      "Diverse healthcare internships matching your skills with leading organizations",
   },
   {
     icon: <FaUsers className="w-6 h-6" />,
-    title: "Consultancy",
+    title: "Healthcare Consultancy",
     description:
-      "Strategic guidance delivering measurable improvements and long-term value.",
+      "Strategic guidance for institutions and professionals in the healthcare sector",
   },
   {
-    icon: <FaRocket className="w-6 h-6" />,
-    title: "Training & Soft Skills",
+    icon: <FaLaptopMedical className="w-6 h-6" />,
+    title: "AI Healthcare Courses",
     description:
-      "Comprehensive upskilling to boost confidence and embrace continuous learning.",
+      "Cutting-edge training in AI applications for drug discovery, Ayurveda, and more",
   },
   {
     icon: <FaClipboardList className="w-6 h-6" />,
     title: "Placement Assistance",
     description:
-      "Connecting you with top companies to accelerate your career growth.",
+      "Connecting healthcare professionals with top employers in the industry",
   },
   {
-    icon: <FaBookOpen className="w-6 h-6" />,
+    icon: <FaGlobe className="w-6 h-6" />,
+    title: "Study Abroad",
+    description:
+      "Global opportunities for healthcare education and career advancement",
+  },
+  {
+    icon: <FaBrain className="w-6 h-6" />,
+    title: "Upskilling Programs",
+    description:
+      "Comprehensive training in nursing informatics, forensics, and soft skills",
+  },
+  {
+    icon: <FaMicroscope className="w-6 h-6" />,
     title: "Dissertation Guidance",
     description:
-      "Meticulous editing, statistical analysis, and research support.",
+      "Research support and statistical analysis for healthcare academics",
   },
 ];
 
