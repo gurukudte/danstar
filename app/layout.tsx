@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import AdmissionPopup from "./components/AdmissionPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,32 +16,41 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Danstar - Empowering the Future of Healthcare Innovation",
-    template: "%s | Danstar Healthcare Solutions",
+    default:
+      "Danstar Education Consultancy | Top Admission Guidance in Bangalore",
+    template: "%s | Danstar Education Consultants",
   },
   description:
-    "Danstar is revolutionizing healthcare through innovative solutions, advanced technologies, and patient-centered care. Discover how we're shaping the future of medicine.",
+    "India's trusted education consultancy specializing in healthcare admissions (Nursing, MBBS, Pharmacy) & career counselling. Get end-to-end admission support for UG/PG courses in Bangalore & across India.",
   keywords: [
-    "healthcare innovation",
-    "medical technology",
-    "healthcare solutions",
-    "patient care",
-    "medical advancements",
-    "healthcare future",
-    "Danstar healthcare",
+    "Admission guidance in Bangalore",
+    "UG and PG admission help India",
+    "Study in India consultant",
+    "Top educational consultancy in Bangalore",
+    "Career counselling in Bangalore",
+    "Nursing admission consultancy Bangalore",
+    "Allied health course admission guidance",
+    "Pharmacy admission consultant India",
+    "MBBS admission consultant India",
+    "Education consultancy near me",
+    "Free career counselling Bangalore",
+    "Best career assessment India",
+    "Healthcare education consultants",
+    "MHA admission guidance Bangalore",
+    "Paramedical admission help",
   ],
   openGraph: {
-    title: "Danstar - Leading Healthcare Innovation",
+    title: "Danstar Education - Premier Admission Consultants in Bangalore",
     description:
-      "Pioneering the future of healthcare with cutting-edge solutions and patient-focused technologies.",
-    url: "https://www.danstarhealth.com",
-    siteName: "Danstar",
+      "95% admission success rate for healthcare courses. Expert guidance for Nursing, MBBS, Pharmacy, MHA & allied health courses with psychometric career assessments.",
+    url: "https://www.danstareducation.com",
+    siteName: "Danstar Education Consultants",
     images: [
       {
-        url: "https://www.danstarhealth.com/images/og-image.jpg",
+        url: "https://www.danstareducation.com/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Danstar Healthcare Solutions",
+        alt: "Danstar Education Consultants - Admission Experts",
       },
     ],
     locale: "en_US",
@@ -48,9 +58,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Danstar - Empowering Healthcare's Future",
-    description: "Transforming healthcare through innovation and technology",
-    images: ["https://www.danstarhealth.com/images/twitter-card.jpg"],
+    title: "Danstar Education - Your Admission Success Partners",
+    description:
+      "From course selection to college admission - we guide you every step of the way",
+    images: ["https://www.danstareducation.com/images/twitter-card.jpg"],
   },
   robots: {
     index: true,
@@ -84,7 +95,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <AdmissionPopup />
+        </Providers>
       </body>
     </html>
   );

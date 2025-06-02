@@ -2,6 +2,14 @@
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
+
+const services = [
+  { name: "Admission Guidance", href: "#services" },
+  { name: "Career Counseling", href: "#services" },
+  { name: "Scholarship Assistance", href: "#services" },
+  { name: "Documentation Support", href: "#services" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-secondary text-white py-12">
@@ -18,20 +26,20 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-400">
-              Empowering the future of healthcare through comprehensive
-              education solutions.
+              Your trusted partner for healthcare education admissions in
+              Bangalore and across India.
             </p>
             <div className="flex space-x-4 mt-4">
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="#contact" className="text-gray-400 hover:text-white">
                 <FaFacebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="#contact" className="text-gray-400 hover:text-white">
                 <FaTwitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="#contact" className="text-gray-400 hover:text-white">
                 <FaLinkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="#contact" className="text-gray-400 hover:text-white">
                 <FaInstagram className="h-5 w-5" />
               </Link>
             </div>
@@ -39,15 +47,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              {[
-                " Admission Support",
-                "Internship Placement",
-                "Consultancy",
-                "Training & Soft Skills",
-              ].map((service) => (
-                <li key={service}>
-                  <Link href="#" className="text-gray-400 hover:text-white">
-                    {service}
+              {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="text-gray-400 hover:text-white"
+                  >
+                    {service.name}
                   </Link>
                 </li>
               ))}

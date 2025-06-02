@@ -1,46 +1,122 @@
+"use client";
 import { motion } from "framer-motion";
-import * as React from "react";
-import { services } from "./LeadForm";
+import {
+  BookOpenCheck,
+  GraduationCap,
+  UserCog,
+  ClipboardList,
+  BadgeDollarSign,
+  School,
+} from "lucide-react";
 
 export function ServicesSection() {
-  return (
-    <section
-      id="services"
-      className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
-    >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="text-center mb-16"
-      >
-        <h2 className="text-3xl font-bold text-secondary">Our Services</h2>
-        <p className="mt-4 text-lg text-secondary-foreground max-w-3xl mx-auto">
-          We offer a comprehensive range of services to support healthcare
-          education and career development.
-        </p>
-      </motion.div>
+  const services = [
+    {
+      icon: <GraduationCap className="w-6 h-6" />,
+      title: "Admission Guidance",
+      description:
+        "Expert assistance for admissions in top nursing, medical, and paramedical colleges across India.",
+    },
+    {
+      icon: <BookOpenCheck className="w-6 h-6" />,
+      title: "Course Selection",
+      description:
+        "Personalized counseling to help you choose the right healthcare career path.",
+    },
+    {
+      icon: <UserCog className="w-6 h-6" />,
+      title: "Career Counseling",
+      description:
+        "Comprehensive career assessment with psychometric evaluation tools.",
+    },
+    {
+      icon: <ClipboardList className="w-6 h-6" />,
+      title: "Documentation Support",
+      description:
+        "End-to-end help with application forms, documents, and admission procedures.",
+    },
+    {
+      icon: <BadgeDollarSign className="w-6 h-6" />,
+      title: "Scholarship Assistance",
+      description:
+        "Guidance on available scholarships and financial aid options.",
+    },
+    {
+      icon: <School className="w-6 h-6" />,
+      title: "College Selection",
+      description:
+        "Recommendations based on your preferences, budget, and career goals.",
+    },
+  ];
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <motion.div
-            key={service.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary"
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  return (
+    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+          className="text-center mb-16"
+        >
+          <motion.h2
+            variants={fadeIn}
+            className="text-3xl sm:text-4xl font-bold text-secondary mb-4"
           >
-            <div className="w-14 h-14 mb-6 rounded-full bg-primary-foreground flex items-center justify-center text-primary">
-              {service.icon}
-            </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
-              {service.title}
-            </h3>
-            <p className="text-secondary-foreground">{service.description}</p>
-          </motion.div>
-        ))}
+            Our <span className="text-primary">Services</span>
+          </motion.h2>
+          <motion.div
+            variants={fadeIn}
+            className="w-16 h-1 bg-primary mx-auto mb-6"
+          />
+          <motion.p
+            variants={fadeIn}
+            className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
+          >
+            Comprehensive support for your educational journey from start to
+            finish
+          </motion.p>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={staggerContainer}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+        >
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              variants={fadeIn}
+              whileHover={{ y: -5 }}
+              className="bg-card p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-border hover:border-primary/30"
+            >
+              <div className="w-12 h-12 mb-5 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-secondary mb-3">
+                {service.title}
+              </h3>
+              <p className="text-muted-foreground">{service.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
