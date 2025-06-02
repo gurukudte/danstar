@@ -6,7 +6,6 @@ import { HeroSection } from "./components/HeroSection";
 import { LeadForm } from "./components/LeadForm";
 import { ServicesSection } from "./components/ServicesSection";
 import { WhyChoose } from "./components/WhyChoose";
-import { MarketingServices } from "./components/MarketingServices";
 import { CourseSection } from "./components/CourseSection";
 import AboutUs from "./components/AboutUs";
 import { Testimonials } from "./components/Testimonials";
@@ -19,7 +18,6 @@ export default function Home() {
       <AboutUs />
       <ServicesSection />
       <CourseSection />
-      <MarketingServices />
       <WhyChoose />
       <Testimonials />
       <LeadForm />
