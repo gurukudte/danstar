@@ -6,16 +6,16 @@ import { Phone, MessageSquare, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 export function HeroSection() {
-  const institutions = [
-    { name: "MS Ramaiah", logo: "/logos/ramaiah.png" },
-    { name: "NIMHANS", logo: "/logos/nimhans.svg" },
-    // { name: "Manipal", logo: "/logos/manipal.svg" },
-    // { name: "St. John's", logo: "/logos/stjohns.png" },
-    // { name: "KIMS", logo: "/logos/kims.png" },
-    // { name: "Yenepoya", logo: "/logos/yenepoya.png" },
-    // { name: "JSS", logo: "/logos/jss.png" },
-    // { name: "KLE", logo: "/logos/kle.png" },
-  ];
+  // const institutions = [
+  //   { name: "MS Ramaiah", logo: "/logos/ramaiah.png" },
+  //   { name: "NIMHANS", logo: "/logos/nimhans.svg" },
+  //   // { name: "Manipal", logo: "/logos/manipal.svg" },
+  //   // { name: "St. John's", logo: "/logos/stjohns.png" },
+  //   // { name: "KIMS", logo: "/logos/kims.png" },
+  //   // { name: "Yenepoya", logo: "/logos/yenepoya.png" },
+  //   // { name: "JSS", logo: "/logos/jss.png" },
+  //   // { name: "KLE", logo: "/logos/kle.png" },
+  // ];
 
   return (
     <section className="relative w-full overflow-hidden h-screen max-h-[1000px] min-h-[600px]">
@@ -101,6 +101,15 @@ export function HeroSection() {
 
               <Button
                 asChild
+                variant="ghost"
+                className=" gap-2 hover:gap-4 text-white hover:text-secondary hover:bg-white border-white/30 px-8 py-6"
+              >
+                <Link href="#courses">
+                  Explore Courses <ChevronRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              {/* <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="text-white hover:bg-primary/20 hover:text-white border-white/30 px-8 py-6"
@@ -108,7 +117,7 @@ export function HeroSection() {
                 <Link href="#courses">
                   Explore Courses <ChevronRight className="ml-2 h-5 w-5" />
                 </Link>
-              </Button>
+              </Button> */}
             </motion.div>
 
             {/* Quick Contact Info */}
@@ -145,7 +154,7 @@ export function HeroSection() {
       </div>
 
       {/* Institution Logos - Desktop */}
-      <div className="absolute bottom-8 left-0 right-0 hidden lg:block">
+      {/* <div className="absolute bottom-8 left-0 right-0 hidden lg:block">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -172,13 +181,13 @@ export function HeroSection() {
             ))}
           </motion.div>
         </div>
-      </div>
+      </div> */}
 
       {/* Institution Logos - Mobile - Looping Marquee */}
-      <div className="absolute bottom-8 left-0 right-0 lg:hidden overflow-hidden">
-        <div className="relative">
-          {/* First set of logos (visible) */}
-          <div className="flex items-center py-4 animate-marquee whitespace-nowrap">
+      {/* <div className="absolute bottom-8 left-0 right-0 lg:hidden overflow-hidden">
+        <div className="relative"> */}
+      {/* First set of logos (visible) */}
+      {/* <div className="flex items-center py-4 animate-marquee whitespace-nowrap">
             {institutions.map((institution, index) => (
               <motion.div
                 key={`first-${institution.name}`}
@@ -196,10 +205,10 @@ export function HeroSection() {
                 />
               </motion.div>
             ))}
-          </div>
+          </div> */}
 
-          {/* Second set of logos (for seamless looping) */}
-          <div className="flex items-center py-4 absolute top-0 animate-marquee2 whitespace-nowrap">
+      {/* Second set of logos (for seamless looping) */}
+      {/* <div className="flex items-center py-4 absolute top-0 animate-marquee2 whitespace-nowrap">
             {institutions.map((institution, index) => (
               <motion.div
                 key={`second-${institution.name}`}
@@ -217,9 +226,9 @@ export function HeroSection() {
                 />
               </motion.div>
             ))}
-          </div>
-        </div>
-      </div>
+          </div> */}
+      {/* </div>
+      </div> */}
     </section>
   );
 }
