@@ -4,10 +4,26 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 
 const services = [
-  { name: "Admission Guidance", href: "#services" },
-  { name: "Career Counseling", href: "#services" },
-  { name: "Scholarship Assistance", href: "#services" },
-  { name: "Documentation Support", href: "#services" },
+  {
+    name: "Admission Support",
+    href: "#services",
+  },
+  {
+    name: "Internship Placement",
+    href: "#services",
+  },
+  {
+    name: "Healthcare Consultancy",
+    href: "#services",
+  },
+  {
+    name: "AI Healthcare Courses",
+    href: "#courses",
+  },
+  {
+    name: "Study Abroad",
+    href: "#services",
+  },
 ];
 
 export default function Footer() {

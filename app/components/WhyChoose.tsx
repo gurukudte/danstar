@@ -2,57 +2,56 @@
 import { motion } from "framer-motion";
 import {
   BadgeCheck,
-  Users,
-  ClipboardCheck,
   Handshake,
   BarChart2,
-  Award,
-  BookOpenCheck,
-  Shield,
+  Lightbulb,
+  Briefcase,
+  Globe,
+  Cpu,
+  HeartPulse,
 } from "lucide-react";
 
 export function WhyChoose() {
   const benefits = [
     {
       icon: <BadgeCheck className="w-6 h-6" />,
-      title: "9+ Years Experience",
-      description:
-        "Trusted by 1000+ students for admission guidance since 2015",
+      title: "Proven Expertise",
+      description: "9+ years transforming healthcare education and careers",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Healthcare Specialists",
-      description: "Experts in medical and paramedical course admissions",
+      icon: <HeartPulse className="w-6 h-6" />,
+      title: "Healthcare Focus",
+      description: "Specialized in nursing, medical, and allied health fields",
     },
     {
-      icon: <ClipboardCheck className="w-6 h-6" />,
-      title: "100% Admission Support",
-      description: "From application to enrollment - we handle it all",
+      icon: <Lightbulb className="w-6 h-6" />,
+      title: "Innovative Solutions",
+      description: "AI-powered courses and cutting-edge training programs",
+    },
+    {
+      icon: <Briefcase className="w-6 h-6" />,
+      title: "End-to-End Support",
+      description: "From admissions to internships and placements",
     },
     {
       icon: <Handshake className="w-6 h-6" />,
       title: "Ethical Practices",
-      description: "No false promises - only genuine guidance and support",
+      description: "Transparent guidance with measurable results",
     },
     {
       icon: <BarChart2 className="w-6 h-6" />,
       title: "95% Success Rate",
-      description: "Majority of our students get into their preferred colleges",
+      description: "High placement and admission success rates",
     },
     {
-      icon: <Award className="w-6 h-6" />,
-      title: "Scholarship Assistance",
-      description: "Help securing financial aid and education loans",
+      icon: <Cpu className="w-6 h-6" />,
+      title: "Future-Ready Skills",
+      description: "Upskilling in AI and digital healthcare technologies",
     },
     {
-      icon: <BookOpenCheck className="w-6 h-6" />,
-      title: "Free Career Counseling",
-      description: "Personalized guidance to choose the right path",
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Direct College Tie-ups",
-      description: "Strong relationships with top institutions across India",
+      icon: <Globe className="w-6 h-6" />,
+      title: "Global Opportunities",
+      description: "Study abroad and international career pathways",
     },
   ];
 
@@ -98,8 +97,8 @@ export function WhyChoose() {
             variants={fadeIn}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Our unique approach makes us Bangalore's most trusted education
-            consultancy
+            Comprehensive solutions that empower healthcare professionals and
+            institutions
           </motion.p>
         </motion.div>
 
@@ -136,18 +135,24 @@ export function WhyChoose() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-16 bg-primary/5 rounded-xl p-8 border border-primary/10"
         >
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">9+</p>
               <p className="text-secondary font-medium">Years Experience</p>
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">1000+</p>
-              <p className="text-secondary font-medium">Students Guided</p>
+              <p className="text-secondary font-medium">
+                Professionals Trained
+              </p>
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">50+</p>
-              <p className="text-secondary font-medium">Partner Colleges</p>
+              <p className="text-secondary font-medium">Partner Institutions</p>
+            </div>
+            <div className="text-center">
+              <p className="text-4xl font-bold text-primary mb-2">15+</p>
+              <p className="text-secondary font-medium">AI & Digital Courses</p>
             </div>
           </div>
         </motion.div>

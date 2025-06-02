@@ -1,51 +1,72 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  BookOpenCheck,
   GraduationCap,
   UserCog,
-  ClipboardList,
-  BadgeDollarSign,
-  School,
+  Briefcase,
+  Laptop,
+  BarChart2,
+  HeartPulse,
+  Globe,
+  Lightbulb,
+  Users,
 } from "lucide-react";
 
 export function ServicesSection() {
   const services = [
     {
       icon: <GraduationCap className="w-6 h-6" />,
-      title: "Admission Guidance",
+      title: "Admission Support",
       description:
-        "Expert assistance for admissions in top nursing, medical, and paramedical colleges across India.",
+        "Innovative recruitment strategies for healthcare institutions to connect with passionate students.",
     },
     {
-      icon: <BookOpenCheck className="w-6 h-6" />,
-      title: "Course Selection",
+      icon: <Briefcase className="w-6 h-6" />,
+      title: "Internship Placement",
       description:
-        "Personalized counseling to help you choose the right healthcare career path.",
+        "Curated internships across healthcare industries to build competitive resumes.",
     },
     {
       icon: <UserCog className="w-6 h-6" />,
-      title: "Career Counseling",
+      title: "Consultancy Services",
       description:
-        "Comprehensive career assessment with psychometric evaluation tools.",
+        "Strategic guidance for healthcare organizations to achieve measurable improvements.",
     },
     {
-      icon: <ClipboardList className="w-6 h-6" />,
-      title: "Documentation Support",
+      icon: <HeartPulse className="w-6 h-6" />,
+      title: "Training & Soft Skills",
       description:
-        "End-to-end help with application forms, documents, and admission procedures.",
+        "Comprehensive upskilling solutions for healthcare professionals to excel in their careers.",
     },
     {
-      icon: <BadgeDollarSign className="w-6 h-6" />,
-      title: "Scholarship Assistance",
+      icon: <Laptop className="w-6 h-6" />,
+      title: "Digital Marketing",
       description:
-        "Guidance on available scholarships and financial aid options.",
+        "Elevate your healthcare brand with strategic digital campaigns and enhanced online presence.",
     },
     {
-      icon: <School className="w-6 h-6" />,
-      title: "College Selection",
+      icon: <Lightbulb className="w-6 h-6" />,
+      title: "AI Courses",
       description:
-        "Recommendations based on your preferences, budget, and career goals.",
+        "Specialized training in AI applications for healthcare including drug discovery and Ayurveda.",
+    },
+    {
+      icon: <BarChart2 className="w-6 h-6" />,
+      title: "Placement Assistance",
+      description:
+        "Direct connections with top healthcare companies to accelerate career growth.",
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "Workshops",
+      description:
+        "Interactive sessions providing practical tools for professional development in healthcare.",
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      title: "Study Abroad",
+      description:
+        "Global opportunities and guidance for healthcare education overseas.",
     },
   ];
 
@@ -88,8 +109,8 @@ export function ServicesSection() {
             variants={fadeIn}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Comprehensive support for your educational journey from start to
-            finish
+            Comprehensive solutions for healthcare education, career
+            development, and institutional growth
           </motion.p>
         </motion.div>
 

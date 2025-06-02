@@ -6,25 +6,14 @@ import { Phone, MessageSquare, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 export function HeroSection() {
-  // const institutions = [
-  //   { name: "MS Ramaiah", logo: "/logos/ramaiah.png" },
-  //   { name: "NIMHANS", logo: "/logos/nimhans.svg" },
-  //   // { name: "Manipal", logo: "/logos/manipal.svg" },
-  //   // { name: "St. John's", logo: "/logos/stjohns.png" },
-  //   // { name: "KIMS", logo: "/logos/kims.png" },
-  //   // { name: "Yenepoya", logo: "/logos/yenepoya.png" },
-  //   // { name: "JSS", logo: "/logos/jss.png" },
-  //   // { name: "KLE", logo: "/logos/kle.png" },
-  // ];
-
   return (
     <section className="relative w-full overflow-hidden h-screen max-h-[1000px] min-h-[600px]">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        {/* Suggested free image from Unsplash: Medical students in classroom */}
+        {/* Suggested free image from Unsplash: Healthcare professionals */}
         <Image
-          src="/hero-bg.jpg" // Replace with your image path
-          alt="Medical students learning"
+          src="/hero-bg.jpg" // Replace with your healthcare-related image
+          alt="Healthcare professionals working"
           fill
           className="object-cover"
           priority
@@ -59,7 +48,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-white mb-6"
             >
-              🎓 Admissions Open 2025-26 🎓
+              🚀 Empowering Healthcare Professionals 🚀
             </motion.div>
 
             <motion.h1
@@ -68,8 +57,8 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
             >
-              <span className="text-primary">Your Dream College</span> Awaits in
-              Bangalore
+              <span className="text-primary">Comprehensive Solutions</span> for
+              Healthcare Education & Careers
             </motion.h1>
 
             <motion.p
@@ -78,9 +67,9 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-6 text-lg leading-8 text-white/90 sm:text-xl max-w-2xl mx-auto lg:mx-0"
             >
-              Expert guidance for admissions in Nursing, Medical, and
-              Paramedical courses at top colleges across India. 100% admission
-              assistance with 9+ years of experience.
+              From admissions support to AI-powered upskilling, we provide
+              end-to-end solutions for healthcare institutions, professionals,
+              and students.
             </motion.p>
 
             <motion.div
@@ -95,29 +84,19 @@ export function HeroSection() {
                 className="bg-primary hover:bg-primary/90 text-white text-base font-semibold px-8 py-6"
               >
                 <Link href="#contact">
-                  Apply Now <ChevronRight className="ml-2 h-5 w-5" />
+                  Get Started <ChevronRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
 
               <Button
                 asChild
                 variant="ghost"
-                className=" gap-2 hover:gap-4 text-white hover:text-secondary hover:bg-white border-white/30 px-8 py-6"
+                className="gap-2 hover:gap-4 text-white hover:text-secondary hover:bg-white border-white/30 px-8 py-6"
               >
-                <Link href="#courses">
-                  Explore Courses <ChevronRight className="ml-2 h-5 w-5" />
+                <Link href="#services">
+                  Our Services <ChevronRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              {/* <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="text-white hover:bg-primary/20 hover:text-white border-white/30 px-8 py-6"
-              >
-                <Link href="#courses">
-                  Explore Courses <ChevronRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button> */}
             </motion.div>
 
             {/* Quick Contact Info */}
@@ -134,7 +113,7 @@ export function HeroSection() {
                 <div>
                   <p className="text-sm text-white/80">Call us</p>
                   <p className="text-lg font-medium text-white">
-                    +91 97405 68622
+                    +91 96333 46168
                   </p>
                 </div>
               </div>
@@ -152,83 +131,6 @@ export function HeroSection() {
           </motion.div>
         </div>
       </div>
-
-      {/* Institution Logos - Desktop */}
-      {/* <div className="absolute bottom-8 left-0 right-0 hidden lg:block">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            className="flex flex-wrap items-center justify-center gap-6 xl:gap-12 opacity-90"
-          >
-            {institutions.map((institution, index) => (
-              <motion.div
-                key={institution.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                className="h-10 w-auto grayscale contrast-200 brightness-0 invert transition-all hover:grayscale-0 hover:brightness-100 hover:invert-0 hover:scale-110"
-                title={institution.name}
-              >
-                <img
-                  src={institution.logo}
-                  alt={institution.name}
-                  className="h-full w-full object-contain"
-                  loading="lazy"
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </div> */}
-
-      {/* Institution Logos - Mobile - Looping Marquee */}
-      {/* <div className="absolute bottom-8 left-0 right-0 lg:hidden overflow-hidden">
-        <div className="relative"> */}
-      {/* First set of logos (visible) */}
-      {/* <div className="flex items-center py-4 animate-marquee whitespace-nowrap">
-            {institutions.map((institution, index) => (
-              <motion.div
-                key={`first-${institution.name}`}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                className="inline-flex flex-shrink-0 h-8 w-auto grayscale contrast-200 brightness-0 invert mx-6"
-                title={institution.name}
-              >
-                <img
-                  src={institution.logo}
-                  alt={institution.name}
-                  className="h-full w-full object-contain"
-                  loading="lazy"
-                />
-              </motion.div>
-            ))}
-          </div> */}
-
-      {/* Second set of logos (for seamless looping) */}
-      {/* <div className="flex items-center py-4 absolute top-0 animate-marquee2 whitespace-nowrap">
-            {institutions.map((institution, index) => (
-              <motion.div
-                key={`second-${institution.name}`}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                className="inline-flex flex-shrink-0 h-8 w-auto grayscale contrast-200 brightness-0 invert mx-6"
-                title={institution.name}
-              >
-                <img
-                  src={institution.logo}
-                  alt={institution.name}
-                  className="h-full w-full object-contain"
-                  loading="lazy"
-                />
-              </motion.div>
-            ))}
-          </div> */}
-      {/* </div>
-      </div> */}
     </section>
   );
 }

@@ -1,46 +1,45 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  GraduationCap,
-  BookOpen,
   Users,
-  BadgeCheck,
   ShieldCheck,
-  Handshake,
+  Briefcase,
+  Target,
+  HeartPulse,
+  Globe,
 } from "lucide-react";
 
 const AboutUs = () => {
   const features = [
     {
-      icon: <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
-      title: "Healthcare Admission Specialists",
-      description:
-        "Experts in nursing, medical, and paramedical course admissions",
+      icon: <HeartPulse className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
+      title: "Healthcare Specialists",
+      description: "Experts in nursing, medical, and healthcare education",
     },
     {
-      icon: <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
-      title: "Established in 2015",
-      description: "9+ years of trusted educational consultancy",
+      icon: <Briefcase className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
+      title: "Comprehensive Services",
+      description: "From admissions to career placement and upskilling",
     },
     {
       icon: <Users className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
-      title: "1000+ Successful Admissions",
-      description: "Students placed in top healthcare colleges",
+      title: "1000+ Professionals Trained",
+      description: "Healthcare professionals empowered",
     },
     {
-      icon: <BadgeCheck className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
-      title: "50+ Partner Institutions",
-      description: "Strong network with leading medical colleges",
+      icon: <Target className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
+      title: "Innovative Solutions",
+      description: "AI-powered courses and digital marketing for healthcare",
     },
     {
       icon: <ShieldCheck className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
-      title: "Ethical Counseling",
-      description: "No false promises - only genuine guidance",
+      title: "Ethical Practices",
+      description: "Genuine guidance with measurable results",
     },
     {
-      icon: <Handshake className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
-      title: "End-to-End Support",
-      description: "From application to enrollment",
+      icon: <Globe className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />,
+      title: "Global Perspective",
+      description: "Study abroad and international opportunities",
     },
   ];
 
@@ -86,13 +85,13 @@ const AboutUs = () => {
             variants={fadeIn}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Bangalore's most trusted consultancy for healthcare education
-            admissions
+            Empowering the future of healthcare through comprehensive education
+            and career solutions
           </motion.p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-10 sm:gap-14">
-          {/* Left Column - Content (now full width on mobile) */}
+          {/* Left Column - Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -101,26 +100,29 @@ const AboutUs = () => {
             className="lg:w-1/2 space-y-6 sm:space-y-8"
           >
             <h3 className="text-2xl sm:text-3xl font-semibold text-secondary">
-              Your Pathway to Healthcare Education
+              Transforming Healthcare Education
             </h3>
             <p className="text-muted-foreground text-base sm:text-lg">
-              Founded in 2015, Danstar Education has become Bangalore's leading
-              educational consultancy specializing in admissions for Nursing
-              (BSc, GNM, ANM), Allied Health Sciences, Pharmacy, Physiotherapy
-              (BPT), Ayurveda (BAMS), and Medical (MBBS) programs.
+              Danstar is a premier healthcare education and career solutions
+              provider, offering end-to-end services from admissions support to
+              cutting-edge upskilling programs in AI and digital technologies
+              for healthcare professionals.
             </p>
             <p className="text-muted-foreground text-base sm:text-lg">
-              Our team of experienced counselors understands the complexities of
-              healthcare education admissions and provides personalized guidance
-              to help students secure seats in top colleges across India.
+              We partner with institutions, colleges, and professionals to
+              deliver innovative solutions that bridge the gap between education
+              and industry requirements in the evolving healthcare landscape.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
                 { value: "9+", label: "Years Experience" },
-                { value: "1000+", label: "Students Guided" },
-                { value: "50+", label: "Partner Colleges" },
+                { value: "1000+", label: "Professionals Served" },
+                { value: "50+", label: "Partner Institutions" },
+                { value: "15+", label: "AI Courses" },
+                { value: "10+", label: "Digital Services" },
+                { value: "100%", label: "Commitment" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
