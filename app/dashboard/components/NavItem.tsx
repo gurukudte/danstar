@@ -17,7 +17,7 @@ export function NavItem({
     <li>
       <button
         onClick={onClickAction}
-        className={`flex items-center w-full p-2 rounded-lg transition-colors ${
+        className={`flex items-center w-full p-2 rounded-lg transition-colors cursor-pointer ${
           active
             ? "bg-muted-foreground text-background dark:bg-secondary dark:text-background"
             : "text-secondary-foreground hover:bg-secondary  dark:hover:bg-muted-foreground cursor-pointer"

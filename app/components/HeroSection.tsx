@@ -113,7 +113,7 @@ export function HeroSection() {
                 <div>
                   <p className="text-sm text-white/80">Call us</p>
                   <p className="text-lg font-medium text-white">
-                    +91 96333 46168
+                    +91 97405 76722
                   </p>
                 </div>
               </div>
@@ -124,7 +124,14 @@ export function HeroSection() {
                 </div>
                 <div>
                   <p className="text-sm text-white/80">Chat on WhatsApp</p>
-                  <p className="text-lg font-medium text-white">Chat Now</p>
+                  <a
+                    href="https://wa.me/919740568622"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-medium text-white underline hover:text-primary transition-colors"
+                  >
+                    Chat Now
+                  </a>
                 </div>
               </div>
             </motion.div>
