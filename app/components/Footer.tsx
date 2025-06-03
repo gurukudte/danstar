@@ -1,6 +1,12 @@
 "use client";
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Image from "next/image";
 
 const services = [
@@ -58,6 +64,14 @@ export default function Footer() {
               <Link href="#contact" className="text-gray-400 hover:text-white">
                 <FaInstagram className="h-5 w-5" />
               </Link>
+              <Link
+                href="https://wa.me/919740568622"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white"
+              >
+                <FaWhatsapp className="h-5 w-5" />
+              </Link>
             </div>
           </div>
           <div>
@@ -103,9 +117,44 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="text-gray-400 not-italic">
-              <p>Email: info@danstar.in</p>
-              <p>Phone: +91 9740568622</p>
-              <p>Website: www.danstar.in</p>
+              <p>
+                Email:{" "}
+                <a
+                  href="mailto:info@danstar.in"
+                  className="text-gray-400 hover:text-white underline"
+                >
+                  info@danstar.in
+                </a>
+              </p>
+              <p>
+                Phone:{" "}
+                <a
+                  href="tel:+919740576722"
+                  className="text-gray-400 hover:text-white underline"
+                >
+                  +91 9740576722
+                </a>
+              </p>
+              <p>
+                Website:{" "}
+                <a
+                  href="https://www.danstar.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white underline"
+                >
+                  www.danstar.in
+                </a>{" "}
+                |{" "}
+                <a
+                  href="https://www.danstar.co.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white underline"
+                >
+                  www.danstar.co.in
+                </a>
+              </p>
             </address>
           </div>
         </div>

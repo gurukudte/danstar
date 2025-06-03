@@ -95,7 +95,7 @@ export default function Navbar() {
             >
               <Link href="tel:+919740568622">
                 <FaPhone className="h-4 w-4" />
-                <span>+91 97405 68622</span>
+                <span>+91 9740576722</span>
               </Link>
             </Button>
             <Button
@@ -161,7 +161,7 @@ export default function Navbar() {
 
             <div className="mt-4 pt-4 border-t border-border/50 flex flex-col gap-3">
               <Button asChild variant="outline" className="w-full gap-2">
-                <Link href="tel:+919740568622" onClick={closeMobileMenu}>
+                <Link href="tel:+919740576722" onClick={closeMobileMenu}>
                   <FaPhone className="h-4 w-4" />
                   Call Now
                 </Link>

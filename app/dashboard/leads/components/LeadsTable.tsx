@@ -149,12 +149,12 @@ export function LeadsTable({ leads, loading }: ILeadTableProps) {
                     <div className="flex flex-col items-center justify-center h-full gap-2">
                       <span className="text-lg font-medium">
                         {leads?.length === 0
-                          ? "No employees found"
-                          : "No matching employees found"}
+                          ? "No Leads found"
+                          : "No matching lead found"}
                       </span>
                       <span className="text-muted-foreground">
                         {leads?.length === 0
-                          ? "Add your first employee to get started"
+                          ? "Add your first lead to get started"
                           : "Try adjusting your search or filters"}
                       </span>
                     </div>
