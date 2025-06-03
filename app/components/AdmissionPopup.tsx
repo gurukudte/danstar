@@ -131,7 +131,7 @@ export default function AdmissionPopup() {
               📱 WhatsApp
             </Link>
             <Link
-              href="tel:9740568622"
+              href="tel:9740576722"
               className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
             >
               📞 Call Now
@@ -146,7 +146,7 @@ export default function AdmissionPopup() {
             >
               www.danstar.in
             </Link>{" "}
-            | 📞 97405 68622
+            | 📞 97405 76722
           </p>
         </div>
       </div>
