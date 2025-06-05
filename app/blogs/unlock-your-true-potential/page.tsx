@@ -1,6 +1,6 @@
 "use client";
 
-// app/blog/career-counselling-in-bangalore/page.tsx
+import { motion } from "framer-motion";
 import {
   MapPin,
   GraduationCap,
@@ -8,49 +8,48 @@ import {
   BookOpen,
   CheckCircle,
   ArrowRight,
-  MessageSquare,
-  Phone,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import { FaWhatsapp} from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-function CareerCounsellingBlog() {
+const CareerCounsellingBangalore = () => {
   const reasons = [
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Overcome career confusion",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Identify your true passion",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Get access to expert career consultants in Bangalore",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Receive data-driven psychometric assessments",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Personalized career roadmap",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Explore local & international opportunities",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Save money by avoiding wrong decisions",
     },
-    { icon: <CheckCircle className="w-6 h-6" />, text: "Build confidence" },
+    { icon: <CheckCircle className="w-5 h-5" />, text: "Build confidence" },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Boost academic or professional performance",
     },
     {
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-5 h-5" />,
       text: "Stay ahead in a competitive world",
     },
   ];
@@ -80,106 +79,114 @@ function CareerCounsellingBlog() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="relative rounded-xl overflow-hidden mb-16 h-96"
-      >
-        <Image
-          src="/career-counselling-bangalore.jpg"
-          alt="Career Counselling in Bangalore"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-red-600/80 to-transparent flex items-center p-8 md:p-12">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Unlock Your True Potential: Best Career Counselling in Bangalore
-              for Students and Professionals
-            </h1>
-            <p className="text-xl text-white bg-red-600 inline-block px-4 py-2 rounded-lg">
-              Career Confusion? Danstar Has the Answer!
-            </p>
+      <section className="relative rounded-xl overflow-hidden my-8">
+        <div className="relative h-96 w-full">
+          <Image
+            src="/career-counselling-bangalore.jpg"
+            alt="Career Counselling in Bangalore"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-red-600/80 to-transparent flex items-center">
+            <div className="max-w-2xl px-8 text-white">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-4xl md:text-5xl font-bold mb-4"
+              >
+                Unlock Your True Potential
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-xl md:text-2xl font-semibold mb-6"
+              >
+                Best Career Counselling in Bangalore for Students and
+                Professionals
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <Button
+                  size="lg"
+                  className="bg-white text-red-600 hover:bg-gray-100 font-bold"
+                  asChild
+                >
+                  <a
+                    href="https://wa.me/919740568622"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaWhatsapp className="mr-2" /> Get Free Consultation
+                  </a>
+                </Button>
+              </motion.div>
+            </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 1: Why Career Counselling in Bangalore Matters */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
+      {/* Why Career Counselling Matters */}
+      <section className="my-16">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
-            <Image
-              src="/bangalore-map.jpg"
-              alt="Map of Bangalore"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
-            <p className="text-center mt-4 text-lg font-medium italic text-gray-600">
-              "In a city of dreams, find your true calling."
-            </p>
+            <div className="relative h-80 w-full rounded-xl overflow-hidden">
+              <Image
+                src="/bangalore-map.jpg"
+                alt="Map of Bangalore"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                <p className="text-white text-xl font-bold text-center p-4">
+                  "In a city of dreams, find your true calling."
+                </p>
+              </div>
+            </div>
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold text-red-600 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Why Career Counselling in Bangalore Matters
             </h2>
             <p className="text-lg text-gray-700 mb-4">
               Bangalore is a city full of opportunities, but with so many
-              options, choosing the right career can be overwhelming. The IT
-              capital of India offers countless career paths in technology,
-              healthcare, finance, and creative fields, making decision-making
-              particularly challenging.
-            </p>
-            <p className="text-lg text-gray-700 mb-4">
-              That's why career counselling in Bangalore is essential. It brings
-              clarity, confidence, and the right direction—whether you're a
-              student or a professional looking for a change. With the rapid
-              changes in the job market and emerging new careers, having expert
-              guidance can make all the difference in your professional journey.
+              options, choosing the right career can be overwhelming. That's why
+              career counselling in Bangalore is essential. It brings clarity,
+              confidence, and the right direction—whether you're a student or a
+              professional looking for a change.
             </p>
             <p className="text-lg text-gray-700">
-              The best career counselling in Bangalore helps you navigate
-              through these options by matching your unique skills, personality,
-              and aspirations with the right career path, ensuring long-term
-              satisfaction and success.
+              As the IT capital of India with numerous educational institutions
+              and multinational companies, Bangalore offers countless career
+              paths. However, this abundance of choices often leads to confusion
+              and indecision. Professional career guidance helps you navigate
+              this complex landscape effectively.
             </p>
           </div>
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 2: What Is Career Counselling and Who Needs It? */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="mb-16 bg-gray-50 rounded-xl p-8"
-      >
-        <h2 className="text-3xl font-bold text-red-600 mb-8 text-center">
+      {/* What Is Career Counselling */}
+      <section className="my-16 bg-gray-50 rounded-xl p-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           What Is Career Counselling and Who Needs It?
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
               <BookOpen className="w-8 h-8 text-red-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">
-              Students (Class 8-12)
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">Students</h3>
             <p className="text-gray-600">
-              Confused about choosing the right stream (Science, Commerce,
-              Arts)? Career counselling helps identify your strengths and
-              interests early.
+              For students in Class 8-12 facing stream selection or college
+              decisions, career counselling provides clarity and direction.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -188,80 +195,56 @@ function CareerCounsellingBlog() {
             </div>
             <h3 className="text-xl font-semibold mb-3">Graduates</h3>
             <p className="text-gray-600">
-              Uncertain about higher education options or career paths? Get
-              guidance on MBA, MS, or other specialized courses that match your
-              profile.
+              Recent graduates unsure about job options or higher studies
+              benefit from expert guidance on career paths.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
               <Briefcase className="w-8 h-8 text-red-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">
-              Working Professionals
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">Professionals</h3>
             <p className="text-gray-600">
-              Feeling stuck in your current job? Career counselling helps with
-              career transitions, upskilling, and finding more fulfilling
-              opportunities.
+              Working professionals considering career changes or skill upgrades
+              get strategic advice for growth.
             </p>
           </div>
         </div>
-        <div className="mt-8 text-center">
-          <p className="text-lg text-gray-700">
-            Career counselling is a structured process that helps individuals
-            understand their personality, skills, and interests—and align them
-            with suitable career paths. Whether you're a student in Class 10 or
-            a software engineer planning a switch, expert career guidance in
-            Bangalore can make all the difference.
-          </p>
-        </div>
-      </motion.section>
+        <p className="text-lg text-gray-700 mt-12">
+          Career counselling is a structured process that helps individuals
+          understand their personality, skills, and interests—and align them
+          with suitable career paths. Whether you're a student in Class 10 or a
+          software engineer planning a switch, expert career guidance in
+          Bangalore can make all the difference.
+        </p>
+      </section>
 
-      {/* Section 3: Top 10 Reasons */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="text-3xl font-bold text-red-600 mb-8 text-center">
+      {/* Top 10 Reasons */}
+      <section className="my-16">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Top 10 Reasons to Choose the Best Career Counselling in Bangalore
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mt-8">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.02 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="flex items-start gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-100"
             >
-              <div className="text-red-600 mt-1">{reason.icon}</div>
-              <p className="text-lg font-medium text-gray-800">{reason.text}</p>
+              <span className="text-red-600 mt-1">{reason.icon}</span>
+              <p className="text-gray-800 font-medium">{reason.text}</p>
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 4: Meet Danstar */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16 bg-red-600 rounded-xl p-8 text-white"
-      >
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="md:w-1/2">
-            <Image
-              src="/danstar-team.jpg"
-              alt="Danstar Counsellors"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="md:w-1/2">
+      {/* Meet Danstar */}
+      <section className="my-16 bg-red-600 rounded-xl overflow-hidden">
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-1/2 p-8 md:p-12 text-white">
             <h2 className="text-3xl font-bold mb-6">
               Meet Danstar – The Best Career Counselling in Bangalore
             </h2>
@@ -272,150 +255,168 @@ function CareerCounsellingBlog() {
               right stream, course, college, or career based on YOUR unique
               profile.
             </p>
-
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-3">Features:</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5" /> Free discovery session
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5" /> Career Interest & Aptitude
-                  tests
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5" /> Personalized reports
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5" /> Online & Offline
-                  counselling
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5" /> Study in India & Abroad
-                  guidance
-                </li>
-              </ul>
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold">Free discovery session</p>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold">
+                  Career Interest & Aptitude tests
+                </p>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold">Personalized reports</p>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold">Online & Offline counselling</p>
+              </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <Button
+              size="lg"
+              className="bg-white text-red-600 hover:bg-gray-100 font-bold"
+              asChild
+            >
               <a
                 href="https://wa.me/919740568622"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-red-600 px-6 py-3 rounded-lg font-medium flex items-center gap-2 justify-center hover:bg-gray-100 transition"
               >
-                <MessageSquare className="w-5 h-5" /> WhatsApp Us
+                <FaWhatsapp className="mr-2" /> WhatsApp Now
               </a>
-              <a
-                href="tel:+919740568622"
-                className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 justify-center hover:bg-green-700 transition"
-              >
-                <Phone className="w-5 h-5" /> Call Now
-              </a>
+            </Button>
+          </div>
+          <div className="md:w-1/2 relative h-96">
+            <Image
+              src="/danstar-team.jpg"
+              alt="Danstar Counsellors"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center">
+              <p>
+                "Danstar changed my career perspective completely!" - Rohan, 19
+              </p>
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 5: Counselling Process */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="text-3xl font-bold text-red-600 mb-8 text-center">
+      {/* Counselling Process */}
+      <section className="my-16">
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
           What to Expect in a Danstar Counselling Session
         </h2>
-        <div className="flex justify-center">
-          <div className="max-w-4xl w-full">
-            <div className="relative">
-              <div className="absolute left-5 top-0 h-full w-0.5 bg-red-200 transform -translate-x-1/2"></div>
-              <div className="space-y-8">
-                {[
-                  "Discovery Call: Understand your needs and expectations",
-                  "Career Test: Comprehensive psychometric assessments",
-                  "Report: Detailed analysis of your skills and interests",
-                  "1-on-1 Discussion: Personalized career exploration",
-                  "Career Plan: Actionable roadmap for your future",
-                  "Follow-up: Ongoing support and guidance",
-                ].map((step, index) => (
-                  <div key={index} className="relative pl-16">
-                    <div className="absolute left-5 top-0 h-10 w-10 rounded-full bg-red-600 flex items-center justify-center text-white font-bold transform -translate-x-1/2">
-                      {index + 1}
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                      <p className="text-lg font-medium">{step}</p>
-                    </div>
+        <div className="relative">
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-red-100 transform -translate-x-1/2"></div>
+          <div className="space-y-12">
+            {[
+              {
+                step: "1",
+                title: "Discovery Call",
+                desc: "Initial conversation to understand your needs and expectations",
+              },
+              {
+                step: "2",
+                title: "Career Test",
+                desc: "Comprehensive psychometric and aptitude assessments",
+              },
+              {
+                step: "3",
+                title: "Report Generation",
+                desc: "Detailed analysis of your skills, interests, and personality",
+              },
+              {
+                step: "4",
+                title: "1-on-1 Discussion",
+                desc: "In-depth session with our career experts",
+              },
+              {
+                step: "5",
+                title: "Career Plan",
+                desc: "Personalized roadmap with short-term and long-term goals",
+              },
+              {
+                step: "6",
+                title: "Follow-up",
+                desc: "Ongoing support and guidance as you progress",
+              },
+            ].map((item, index) => (
+              <div key={index} className="relative">
+                <div
+                  className={`flex items-center ${
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
+                >
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-red-600 text-white font-bold text-xl z-10 mx-auto md:mx-0">
+                    {item.step}
                   </div>
-                ))}
+                  <motion.div
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="flex-1 bg-white p-6 rounded-lg shadow-md md:mx-8 mt-4 md:mt-0"
+                  >
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-600">{item.desc}</p>
+                  </motion.div>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
-        <p className="text-center mt-8 text-lg text-gray-700 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-700 mt-12 text-center max-w-3xl mx-auto">
           From the moment you connect with Danstar, we make career counselling a
           fun, easy, and transformative experience. We blend technology,
           psychology, and years of counselling expertise to help you find your
           perfect path.
         </p>
-      </motion.section>
+      </section>
 
-      {/* Section 6: Success Stories */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16 bg-gray-50 rounded-xl p-8"
-      >
-        <h2 className="text-3xl font-bold text-red-600 mb-8 text-center">
+      {/* Success Stories */}
+      <section className="my-16 bg-gray-50 rounded-xl p-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
           Student Success Stories
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {successStories.map((story, index) => (
             <motion.div
               key={index}
-              whileHover={{ y: -5 }}
-              className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-600 relative"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative"
             >
-              <div className="absolute -top-5 -left-5 bg-white p-2 rounded-full shadow-md">
-                <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
-                  <GraduationCap className="w-5 h-5 text-red-600" />
-                </div>
+              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md">
+                <Image
+                  src={`/student-${index + 1}.jpg`}
+                  alt={story.name}
+                  width={64}
+                  height={64}
+                  className="object-cover"
+                />
               </div>
-              <p className="text-lg italic text-gray-700 mb-4">
-                "{story.quote}"
-              </p>
-              <p className="font-medium text-red-600">— {story.name}</p>
+              <blockquote className="pl-12">
+                <p className="text-lg italic text-gray-700 mb-4">
+                  "{story.quote}"
+                </p>
+                <footer className="font-semibold text-red-600">
+                  — {story.name}
+                </footer>
+              </blockquote>
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 7: Areas Served */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="text-3xl font-bold text-red-600 mb-8 text-center">
-          Areas We Serve in Bangalore
-        </h2>
+      {/* Areas Served */}
+      <section className="my-16">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
-            <Image
-              src="/bangalore-areas.jpg"
-              alt="Bangalore Areas"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Areas We Serve in Bangalore
+            </h2>
             <p className="text-lg text-gray-700 mb-6">
               Whether you're in Whitefield or Yelahanka, Danstar offers career
               guidance in Bangalore across all neighborhoods—both in person and
@@ -425,87 +426,92 @@ function CareerCounsellingBlog() {
               {areasServed.map((area, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-red-600" />
-                  <span className="text-gray-800">{area}</span>
+                  <span className="font-medium">{area}</span>
                 </div>
               ))}
             </div>
           </div>
+          <div className="md:w-1/2">
+            <div className="relative h-80 w-full rounded-xl overflow-hidden">
+              <Image
+                src="/bangalore-areas.jpg"
+                alt="Bangalore Areas"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 8: CTA */}
-      <motion.section
-        initial={{ scale: 0.95, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mb-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-center text-white"
-      >
+      {/* CTA Section */}
+      <section className="my-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-center text-white">
         <h2 className="text-3xl font-bold mb-4">
           Try a Free Career Quiz Today!
         </h2>
         <p className="text-xl mb-8">🎯 Discover Your Top 3 Career Matches!</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="https://danstar.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-red-600 px-6 py-3 rounded-lg font-medium flex items-center gap-2 justify-center hover:bg-gray-100 transition"
+          <Button
+            size="lg"
+            className="bg-white text-red-600 hover:bg-gray-100 font-bold"
+            asChild
           >
-            Take the FREE Career Interest Test{" "}
-            <ArrowRight className="w-5 h-5" />
-          </a>
-          <a
-            href="https://wa.me/919740568622"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 justify-center hover:bg-green-700 transition"
+            <a
+              href="https://danstar.in"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Take FREE Career Test <ArrowRight className="ml-2" />
+            </a>
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="text-white border-white hover:bg-white/10 font-bold"
+            asChild
           >
-            <MessageSquare className="w-5 h-5" /> WhatsApp Us
-          </a>
+            <a
+              href="https://wa.me/919740568622"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="mr-2" /> WhatsApp Us
+            </a>
+          </Button>
         </div>
-      </motion.section>
+      </section>
 
-      {/* Section 9: Final Word */}
-      <motion.section
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-center"
-      >
-        <div className="bg-gray-100 p-8 rounded-xl mb-8">
-          <p className="text-2xl font-bold text-red-600 mb-4">
+      {/* Final Word */}
+      <section className="my-16 text-center">
+        <div className="bg-gray-100 rounded-xl p-8 mb-8">
+          <h3 className="text-2xl font-bold text-red-600 mb-4">
             "Your future isn't found, it's created. Start now."
-          </p>
+          </h3>
         </div>
-        <p className="text-lg text-gray-700 mb-6">
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
           The best investment you can make is in yourself. Let Danstar's expert
           career consultants in Bangalore guide you toward a bright, meaningful
           future. Don't leave your career to chance—get the clarity and
           direction you deserve.
         </p>
-        <div className="flex flex-wrap gap-2 justify-center">
-          {[
-            "#CareerCounsellingInBangalore",
-            "#CareerGuidanceInBangalore",
-            "#DanstarCareers",
-            "#FindYourPath",
-            "#StudyAbroad",
-            "#AdmissionsHelp",
-          ].map((tag, index) => (
-            <span
-              key={index}
-              className="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      </motion.section>
+        <Button
+          size="lg"
+          className="bg-red-600 hover:bg-red-700 font-bold"
+          asChild
+        >
+          <a
+            href="https://wa.me/919740568622"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book Your Session Now
+          </a>
+        </Button>
+      </section>
+
+     
     </div>
   );
-}
+};
 
-
-export default CareerCounsellingBlog;
+export default CareerCounsellingBangalore;

@@ -67,13 +67,13 @@ export default function Navbar() {
               About Us
             </Link>
             <Link
-              href="#courses"
+              href="/courses"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Courses
             </Link>
             <Link
-              href="#services"
+              href="/services"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Services
