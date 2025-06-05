@@ -152,10 +152,10 @@ export default function AboutPage() {
       >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <StatItem number="100+" label="Institutions" />
-            <StatItem number="5000+" label="Students" />
+            <StatItem number="50+" label="Institutions" />
+            <StatItem number="1000+" label="Students" />
             <StatItem number="200+" label="Connections" />
-            <StatItem number="15+" label="Years Experience" />
+            <StatItem number="9+" label="Years Experience" />
           </div>
         </div>
       </motion.section>

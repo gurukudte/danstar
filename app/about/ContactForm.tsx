@@ -27,7 +27,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
 const formSchema = z.object({
-  name: z.string().min(2, {
+  fullName: z.string().min(2, {
     message: "Name must be at least 2 characters.",
   }),
   email: z.string().email({
@@ -46,7 +46,7 @@ const formSchema = z.object({
 
 const formFields = [
   {
-    name: "name",
+    name: "fullName",
     label: "Full Name*",
     placeholder: "Your name",
     type: "input",
@@ -88,7 +88,7 @@ export function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
+      fullName: "",
       email: "",
       phone: "",
       interest: "",
@@ -147,13 +147,14 @@ export function ContactForm() {
                   <FormControl>
                     {field.type === "select" ? (
                       <Select
+                        
                         onValueChange={formField.onChange}
                         defaultValue={formField.value}
                       >
                         <SelectTrigger>
                           <SelectValue placeholder="Select an option" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="bg-white">
                           {field.options?.map((option) => (
                             <SelectItem key={option} value={option}>
                               {option}

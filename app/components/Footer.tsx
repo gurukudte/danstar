@@ -134,6 +134,13 @@ export default function Footer() {
                 >
                   +91 9740576722
                 </a>
+                ,
+                <a
+                  href="tel:+919740568622"
+                  className="text-gray-400 hover:text-white underline"
+                >
+                  +91 9740568622
+                </a>
               </p>
               <p>
                 Website:{" "}

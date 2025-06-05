@@ -146,7 +146,7 @@ export default function AdmissionPopup() {
             >
               www.danstar.in
             </Link>{" "}
-            | 📞 97405 76722
+            | 📞 97405 76722,📞 97405 68622
           </p>
         </div>
       </div>
