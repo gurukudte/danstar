@@ -5,6 +5,8 @@ import { Providers } from "./providers";
 import AdmissionPopup from "./components/AdmissionPopup";
 import { GA_TRACKING_ID } from "@/lib/gtag";
 import Script from "next/script";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
     title: "Danstar Education - Premier Admission Consultants in Bangalore",
     description:
       "95% admission success rate for healthcare courses. Expert guidance for Nursing, MBBS, Pharmacy, MHA & allied health courses with psychometric career assessments.",
-    url: "https://www.danstareducation.com",
+    url: "https://www.danstar.in",
     siteName: "Danstar Education Consultants",
     images: [
       {
@@ -79,7 +81,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.danstarhealth.com",
+    canonical: "https://www.danstar.co.in",
   },
   verification: {
     google: "your-google-verification-code",
@@ -95,6 +97,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* ✅ Google Site Verification for SEO */}
+        <meta
+          name="google-site-verification"
+          content="DHh84Qx8_Vwrd_j1du7cULIa94GV4Y5KmNnqJ1HPRkQ"
+        />
+
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -109,16 +117,57 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','${GA_TRACKING_ID}');
           `}
         </Script>
-        {/* End Google Tag Manager */}
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <Script id="ga-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `}
+        </Script>
+
+        {/* Meta Pixel Code */}
+        <Script id="fb-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1397752228092607');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1397752228092607&ev=PageView&noscript=1"
+          />
+        </noscript>
       </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
+          <NavBar />
           {children}
+          <Footer />
           <AdmissionPopup />
         </Providers>
-        {/* <!-- Google Tag Manager (noscript) --> */}
+
+        {/* GTM Fallback */}
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}`}
@@ -127,7 +176,16 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
+
+        {/* GA Fallback */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
       </body>
     </html>
   );

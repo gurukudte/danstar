@@ -1,7 +1,5 @@
 "use client";
 
-import Navbar from "./components/NavBar";
-import Footer from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { LeadForm } from "./components/LeadForm";
 import { ServicesSection } from "./components/ServicesSection";
@@ -13,7 +11,7 @@ import { Testimonials } from "./components/Testimonials";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <AboutUs />
       <ServicesSection />
@@ -21,7 +19,6 @@ export default function Home() {
       <WhyChoose />
       <Testimonials />
       <LeadForm />
-      <Footer />
     </div>
   );
 }

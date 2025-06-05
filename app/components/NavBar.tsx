@@ -61,7 +61,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="#about"
+              href="/about"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               About Us
@@ -83,6 +83,12 @@ export default function Navbar() {
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Success Stories
+            </Link>
+            <Link
+              href="/blogs"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              Blogs
             </Link>
           </nav>
 
