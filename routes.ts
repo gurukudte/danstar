@@ -3,7 +3,7 @@
  *
  * @constant {string[]}
  */
-export const publicRoutes = ["/"];
+export const publicRoutes = ["/", "/about"];
 export const apiPublicRoutes = [
   "/api",
   // Add other public API routes here
