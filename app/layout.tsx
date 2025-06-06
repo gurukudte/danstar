@@ -42,6 +42,46 @@ export const metadata: Metadata = {
     "Healthcare education consultants",
     "MHA admission guidance Bangalore",
     "Paramedical admission help",
+    "best career counselling in bangalore",
+    "career consultant in bangalore",
+    "career counselling in bangalore for students",
+    "career guidance in bangalore",
+    // Study Abroad Keywords
+    "study abroad consultants bangalore",
+    "best consultancy in bangalore for abroad studies",
+    "consultancy for abroad studies in bangalore",
+    "best overseas consultancy in bangalore",
+
+    // Education Consultants
+    "best admission consultants in bangalore",
+    "education counsellor in bangalore",
+    "best educational consultants in bangalore",
+    "top education consultants in bangalore",
+    "best education counsellor in bangalore",
+    "higher education consultants in bangalore",
+    "higher studies consultancy in bangalore",
+
+    // India-wide Education
+    "education consultants in india",
+    "best education consultants in india",
+
+    // MBBS Admissions
+    "mbbs admission consultants in india",
+    "best mbbs admission consultants in india",
+    "mbbs admission consultants in bangalore",
+    "mbbs consultant in bangalore",
+    "mbbs abroad consultants in bangalore",
+
+    // Career Guidance
+    "best career after 12th in india",
+    "best career in india after 12th",
+    "best career options after 12th in india",
+
+    // Nursing & BBA
+    "bsc nursing colleges in bangalore with fees",
+    "bsc nursing fees bangalore",
+    "bba admission in bangalore",
+    "bba colleges in bangalore direct admission",
   ],
   openGraph: {
     title: "Danstar Education - Premier Admission Consultants in Bangalore",
