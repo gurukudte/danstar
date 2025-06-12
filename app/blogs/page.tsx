@@ -18,7 +18,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function BlogDashboardPage() {
     return (
-      <main className="max-w-6xl mx-auto px-4 py-12">
+      <main className="max-w-8xl mx-auto px-4 py-6">
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold text-primary mb-4">
             Danstar Career Counselling Blogs

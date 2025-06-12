@@ -101,5 +101,72 @@ export const blogs: Blog[] = [
     content:
       "Bangalore, often called the “Silicon Valley of India,” is a top choice for students aspiring to pursue business studies. With a range of reputed institutions offering industry-ready programs, BBA admission in Bangalore is highly sought-after by students across India.",
   },
+  {
+    slug: "llb-admission-in-bangalore",
+    title:
+      "LLB Admission in Bangalore – Your Ultimate Guide to a Legal Career in 2025! ⚖️",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      "Are you passionate about justice, human rights, or becoming the next legal eagle of India? If yes, then there’s no better time than now to pursue an LLB admission in Bangalore, one of India’s top education hubs! ⚖️📚",
+  },
+  {
+    slug: "physiotherapy-colleges-in-bangalore-fee-structure",
+    title:
+      "Physiotherapy Colleges in Bangalore Fee Structure 2025 – What You Need to Know!",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      "Are you dreaming of becoming a licensed physiotherapist in India? Looking for a career that lets you heal with your hands and help lives move again? Then it’s time to explore one of the most in-demand healthcare courses — BPT (Bachelor of Physiotherapy)!",
+  },
+  {
+    slug: "hospital-management-course-in-bangalore",
+    title:
+      "Build Your Future in Healthcare! Top Hospital Management & Administration Courses in Bangalore 🌟",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      " Are you passionate about healthcare but don’t want to become a doctor or nurse? Looking for a high-demand, high-growth career that blends healthcare with management? Then a hospital management course in Bangalore or a hospital administration course in Bangalore might be your perfect match! 💼🏥",
+  },
+  {
+    slug: "mha-course-in-bangalore",
+    title:
+      "🎓 MHA Course in Bangalore – The Gateway to a High-Paying Healthcare Career! 🚑💼",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      "Are you passionate about healthcare but don’t want to wear a stethoscope? Dreaming of a career that combines leadership, management, and healthcare? Then an MHA course in Bangalore is your golden ticket to success! 💥",
+  },
+  {
+    slug: "mba-consultant",
+    title:
+      "🎓 Unlock Your Dream Career with the Right MBA & MBBS Consultants – Your Complete Guide to Success! ",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      "In today’s fast-paced, competitive world, choosing the right career path is a life-changing decision. Whether you're planning to pursue an MBA from a prestigious university or aiming to become a doctor with an MBBS degree from abroad, expert guidance is the key to making smart choices. This is where MBA consultants, MBBS abroad consultants, and MBBS overseas consultants come in – professionals who can shape your career and future. ",
+  },
+  {
+    slug: "bcom-with-ACCA-IN-BANGALORE",
+    title:
+      "🎯 BCom with ACCA or KPMG in Bangalore – The Smartest Career Move in 2025!",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      "If you're a commerce student thinking about your future, listen up! Regular BCom degrees are great, but what if you could upgrade your BCom and get global exposure, top job placements, and international certifications – all while studying in Bangalore? ",
+  },
+
   // Add more blogs as needed
 ];

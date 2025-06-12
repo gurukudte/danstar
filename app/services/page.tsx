@@ -21,6 +21,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const ServicesPage = () => {
   // Animation variants
@@ -182,14 +183,13 @@ const ServicesPage = () => {
           whileTap={{ scale: 0.95 }}
           className="mt-8 flex justify-center gap-4"
         >
-          <Button className="bg-primary hover:bg-primary/90 text-white cursor-pointer">
-            Explore All Services
-          </Button>
+          
           <Button
             variant="outline"
             className="border-secondary text-secondary-foreground cursor-pointer"
           >
-            Contact Our Experts
+            <Link href="/">Contact Our Experts</Link>
+            
           </Button>
         </motion.div>
       </motion.section>

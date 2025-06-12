@@ -108,7 +108,7 @@ export default function Navbar() {
               asChild
               className="bg-primary hover:bg-primary/90 text-white"
             >
-              <Link href="#contact">Free Consultation</Link>
+              <Link href="/#contact">Free Consultation</Link>
             </Button>
           </div>
 
