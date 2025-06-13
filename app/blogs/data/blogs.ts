@@ -46,6 +46,18 @@ export const blogs: Blog[] = [
   {
     slug: "best-education-consultants-in-india",
     title:
+      "Unlock Your Future with the Best Admission Consultants in Bangalore: Expert Guidance for Higher Education Success",
+    keywords: [
+      "study abroad consultants bangalore",
+      "best consultancy in bangalore for abroad studies",
+      "consultancy for abroad studies in bangalore",
+    ],
+    content:
+      "Choosing the right educational path is one of the most important decisions in a student’s life. Whether you are a school-leaver aspiring to join a prestigious university or a graduate seeking advanced studies, professional guidance can make a significant difference. This is where the best admission consultants in Bangalore come into play, helping you navigate the complex world of admissions, courses, and career planning.",
+  },
+  {
+    slug: "education-consultants-in-india",
+    title:
       "Best Education Consultants in India: Your Trusted Pathway to Success",
     keywords: [
       "study abroad consultants bangalore",
@@ -53,7 +65,7 @@ export const blogs: Blog[] = [
       "consultancy for abroad studies in bangalore",
     ],
     content:
-      "In a rapidly globalizing world, choosing the right academic path is more critical—and more confusing—than ever. Students and parents alike often feel overwhelmed by the myriad of choices in courses, colleges, entrance exams, scholarships, and study abroad destinations. This is where **education consultants in India** come in as game-changers.",
+      "In a rapidly globalizing world, choosing the right academic path is more critical—and more confusing—than ever. Students and parents alike often feel overwhelmed by the myriad of choices in courses, colleges, entrance exams, scholarships, and study abroad destinations. This is where **education consultants in India** come in as game-changers",
   },
   {
     slug: "best-mbbs-admission-consultants",
@@ -166,6 +178,17 @@ export const blogs: Blog[] = [
     ],
     content:
       "If you're a commerce student thinking about your future, listen up! Regular BCom degrees are great, but what if you could upgrade your BCom and get global exposure, top job placements, and international certifications – all while studying in Bangalore? ",
+  },
+  {
+    slug: "BCA-WITH-AI-IN-BANGALORE",
+    title:
+      "Future-Proof Your Career with BCA with AI in Bangalore – 2025 Admissions Open!",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+    ],
+    content:
+      "Are you fascinated by Artificial Intelligence? Want to build apps, bots, or even your own AI like ChatGPT someday? Then don’t settle for an ordinary degree. Say hello to the future: BCA with AI in Bangalore – the hottest course that’s blending Computer Applications with the power of Artificial Intelligence!",
   },
 
   // Add more blogs as needed

@@ -121,7 +121,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.danstar.co.in",
+    canonical: "https://www.danstar.in",
   },
   verification: {
     google: "your-google-verification-code",
@@ -169,6 +169,18 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_TRACKING_ID}');
+          `}
+        </Script>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-FMSBFW9BMC"
+        />
+        <Script id="ga-new-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FMSBFW9BMC');
           `}
         </Script>
 
