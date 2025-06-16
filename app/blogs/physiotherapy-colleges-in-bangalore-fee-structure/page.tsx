@@ -1,4 +1,3 @@
-"use client"
 
 import WhyBangalore from "../llb-admission-in-bangalore/components/WhyBangalore";
 import AdmissionProcess from "./components/AdmissionProcess";
@@ -6,7 +5,12 @@ import CareerScope from "./components/CareerScope";
 import CollegeListing from "./components/CollegeListing";
 import FeeStructure from "./components/FeeStructure";
 import HeroSection from "./components/HeroSection";
-
+export const metadata = {
+  alternates: {
+    canonical:
+      "https://www.danstar.in/blogs/physiotherapy-colleges-in-bangalore-fee-structure",
+  },
+};
 export default function PhysiotherapyColleges() {
   return (
     <div className="bg-background text-foreground">

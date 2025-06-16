@@ -1,4 +1,4 @@
-"use client"
+
 import {
   Scale,
   Landmark,
@@ -11,7 +11,11 @@ import AdmissionSteps from "./components/AdmissionSteps";
 import CollegeCard from "./components/CollegeCard";
 import CareerPathways from "./components/CareerPathways";
 import EligibilityCriteria from "./components/EligibilityCriteria";
-
+export const metadata = {
+  alternates: {
+    canonical: "https://www.danstar.in/blogs/llb-admission-in-bangalore",
+  },
+};
 function LLBAdmissionBangalore() {
   return (
     <div className=" bg-background text-white">

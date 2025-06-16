@@ -4,7 +4,11 @@ import KpmgBenefits from "./components/KpmgBenefits";
 import ProgramIntro from "./components/ProgramIntro";
 import StudentTestimonials from "./components/StudentTestimonials";
 import WhyBangalore from "./components/WhyBangalore";
-
+export const metadata = {
+  alternates: {
+    canonical: "https://www.danstar.in/blogs/bcom-with-ACCA-IN-BANGALORE",
+  },
+};
 export default function BComACCAKPMG() {
   return (
     <div className="bg-background text-foreground">

@@ -3,7 +3,11 @@ import CareerScope from "./components/CareerScope";
 import HeroSection from "./components/HeroSection";
 import TopInstitutes from "./components/TopInstitutes";
 import WhatIsMHA from "./components/WhatIsMHA";
-
+export const metadata = {
+  alternates: {
+    canonical: "https://www.danstar.in/blogs/mha-course-in-bangalore",
+  },
+};
 
 export default function MHACourse() {
     return (

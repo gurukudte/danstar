@@ -5,7 +5,11 @@ import MBAConsultantBenefits from "./components/MBAConsultantBenefits";
 import MBBSConsultantBenefits from "./components/MBBSConsultantBenefits";
 import SuccessStories from "./components/SuccessStories";
 import WhyConsultants from "./components/WhyConsultants";
-
+export const metadata = {
+  alternates: {
+    canonical: "https://www.danstar.in/blogs/mba-consultant",
+  },
+};
 export default function ConsultantsGuide() {
   return (
     <div className="bg-background text-foreground">

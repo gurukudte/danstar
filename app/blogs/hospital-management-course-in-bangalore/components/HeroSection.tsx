@@ -1,3 +1,4 @@
+"use client"
 import { Building2, ClipboardList, BarChart2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";

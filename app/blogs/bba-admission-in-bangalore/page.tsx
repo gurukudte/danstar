@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import {
   Building2,
   CalendarCheck,
@@ -10,7 +9,13 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
+export const metadata = {
+  description:
+    "Complete guide to securing BBA admission in Bangalore's top colleges through direct admission and entrance exams. Explore eligibility, top colleges, and the admission process for 2025.",
+  alternates: {
+    canonical: "https://www.danstar.in/blogs/bba-admission-in-bangalore",
+  },
+};
 export default function BBAAdmissionBangalore() {
   const colleges = [
     {
@@ -90,10 +95,14 @@ export default function BBAAdmissionBangalore() {
       <section className="mb-12">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1469&auto=format&fit=crop"
               alt="Bangalore business students"
               className="rounded-lg shadow-md w-full"
+              width={1469} // Matches the `w=` param in the URL
+              height={Math.round(1469 * (2 / 3))} // Approx. 3:2 aspect ratio (common for Unsplash)
+              priority={true} // Optional: Enable if this is a critical above-the-fold image
+              style={{ objectFit: "cover" }} // Replaces `fit=crop` from the URL
             />
           </div>
           <div className="md:w-1/2">
@@ -257,8 +266,6 @@ export default function BBAAdmissionBangalore() {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 }
