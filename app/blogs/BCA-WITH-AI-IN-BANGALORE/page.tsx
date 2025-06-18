@@ -4,7 +4,11 @@ import TopColleges from "./components/TopColleges";
 import WhatIsBCAAI from "./components/WhatIsBCAAI";
 import WhoShouldApply from "./components/WhoShouldApply";
 import WhyBangalore from "./components/WhyBangalore";
-
+export const metadata = {
+  alternates: {
+    canonical: "https://www.danstar.in/blogs/BCA-WITH-AI-IN-BANGALORE",
+  },
+};
 export default function BCAAI() {
   return (
     <div className="bg-background text-foreground">
