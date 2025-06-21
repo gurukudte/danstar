@@ -1,22 +1,8 @@
+import { publicRoutes } from "@/routes";
+
 export function GET() {
   const baseUrls = ["https://www.danstar.in", "https://www.danstar.co.in"];
-  const paths = [
-    "",
-    "/about",
-    "/services",
-    "/contact",
-    "/courses",
-    "/blog",
-    "/blogs/study-abroad-consultants-bangalore",
-    "/blogs/unlock-your-true-potential",
-    "/blogs/best-admission-consultants-in-bangalore",
-    "/blogs/best-education-consultants-in-india",
-    "/blogs/best-mbbs-admission-consultants",
-    "/blogs/best-career-after-12th-in-india",
-    "/blogs/bsc-nursing-colleges-in-bangalore-with-fees",
-    "/blogs/bba-admission-in-bangalore",
-  ];
-
+  const paths = publicRoutes
   const xml = baseUrls
     .map((domain) => {
       return paths

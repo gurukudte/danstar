@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FaPhone, FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { ContactFormDialog } from "@/components/ContactFormDialog";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -104,12 +105,7 @@ export default function Navbar() {
                 <span>+91 9740576722</span>
               </Link>
             </Button>
-            <Button
-              asChild
-              className="bg-primary hover:bg-primary/90 text-white"
-            >
-              <Link href="/#contact">Free Consultation</Link>
-            </Button>
+            <ContactFormDialog buttonText="Free consultation"/>
           </div>
 
           {/* Mobile menu button */}

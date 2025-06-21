@@ -7,6 +7,8 @@ export const publicRoutes = [
   "/",
   "/about",
   "/blogs",
+  "/courses",
+  "/services",
   "/blogs/study-abroad-consultants-bangalore",
   "/blogs/unlock-your-true-potential",
   "/blogs/best-admission-consultants-in-bangalore",
@@ -15,6 +17,14 @@ export const publicRoutes = [
   "/blogs/best-career-after-12th-in-india",
   "/blogs/bsc-nursing-colleges-in-bangalore-with-fees",
   "/blogs/bba-admission-in-bangalore",
+  "/blogs/BCA-WITH-AI-IN-BANGALORE",
+  "/blogs/bcom-with-ACCA-IN-BANGALORE",
+  "/blogs/education-consultants-in-india",
+  "/blogs/hospital-management-course-in-bangalore",
+  "/blogs/llb-admission-in-bangalore",
+  "/blogs/mba-consultant",
+  "/blogs/mha-course-in-bangalore",
+  "/blogs/physiotherapy-colleges-in-bangalore-fee-structure",
 ];
 export const apiPublicRoutes = [
   "/api",
