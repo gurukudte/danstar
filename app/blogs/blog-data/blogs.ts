@@ -27,6 +27,21 @@ export const blogs: Blog[] = [
       "Career counselling is a structured process that helps individuals understand their personality, skills, and interests—and align them with suitable career paths. Whether you're a student in Class 10 or a software engineer planning a switch, expert career guidance in Bangalore can make all the difference.",
   },
   {
+    slug: "study-abroad-consultants-bangalore",
+    title: "Study Abroad Consultants in Bangalore | Call - 9740568622",
+    description:
+      "Explore the world with top study abroad consultants in Bangalore. Get expert guidance for your international education journey. Call now!",
+    keywords: [
+      "study abroad consultants in bangalore",
+      "best study abroad consultants in bangalore",
+      "study abroad consultancy in bangalore",
+    ],
+    contentTitle:
+      "Study Abroad Consultants in Bangalore: Your Gateway to Global Education", 
+    contentDescription:
+      "Studying abroad is a dream for many students, offering not just academic excellence but also cultural exposure and personal growth. However, the process can be overwhelming, from choosing the right course and university to understanding visa requirements. This is where **study abroad consultants in Bangalore** come into play, providing expert guidance to make your international education journey smooth and successful.",  
+  },
+  {
     slug: "best-educational-consultants-in-bangalore",
     title: "Best Educational Consultants in Bangalore and Counsellor",
     description:
@@ -44,18 +59,6 @@ export const blogs: Blog[] = [
       "Top Education Consultants in Bangalore – Your Gateway to Academic Success",
     contentDescription:
       "With over 800 colleges and thousands of course options, Bangalore is one of India’s top educational hubs. However, choosing the right course, college, or even country for higher studies is a daunting task. This is where the role of an **education counsellor in Bangalore** becomes invaluable. Whether you're planning to study in India or abroad, a good consultant simplifies the journey, providing insights, guidance, and access to the best institutions.",
-  },
-  {
-    slug: "best-admission-consultants-in-bangalore",
-    contentTitle:
-      "Unlock Your Future with the Best Admission Consultants in Bangalore",
-    keywords: [
-      "study abroad consultants bangalore",
-      "best consultancy in bangalore for abroad studies",
-      "consultancy for abroad studies in bangalore",
-    ],
-    contentDescription:
-      "Unlock Your Future with the Best Admission Consultants in Bangalore: Expert Guidance for Higher Education Success Choosing the right educational path is one of the most important decisions in a student’s life. Whether you are a school-leaver aspiring to join a prestigious university or a graduate seeking advanced studies, professional guidance can make a significant difference. This is where the best admission consultants in Bangalore come into play, helping you navigate the complex world of admissions, courses, and career planning.",
   },
   {
     slug: "best-education-consultants-in-india",
