@@ -9,13 +9,36 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { blogs } from "../blog-data/blogs";
+
+const route = "bba-admission-in-bangalore";
+const blog = blogs.find((b) => b.slug === route);
+
 export const metadata = {
-  description:
-    "Complete guide to securing BBA admission in Bangalore's top colleges through direct admission and entrance exams. Explore eligibility, top colleges, and the admission process for 2025.",
   alternates: {
-    canonical: "https://www.danstar.in/blogs/bba-admission-in-bangalore",
+    canonical: `https://danstar.in/blogs/${route}`,
+  },
+  title: blog?.title,
+  description: blog?.description,
+  keywords: blog?.keywords.join(", "),
+  openGraph: {
+    title: blog?.title,
+    description: blog?.description,
+    url: `https://danstar.in/blogs/${route}`,
+    siteName: "Danstar",
+    images: [
+      {
+        url: "https://danstar.in/images/danstar-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Danstar Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
 };
+
 export default function BBAAdmissionBangalore() {
   const colleges = [
     {
