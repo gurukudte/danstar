@@ -1,3 +1,7 @@
+import { blogs } from "./app/blogs/blog-data/blogs";
+
+const blogRoutes = blogs.map((blog) => `/blogs/${blog.slug}`);
+
 /**
  * Public routes that do not require authentication.
  *
@@ -9,22 +13,23 @@ export const publicRoutes = [
   "/blogs",
   "/courses",
   "/services",
-  "/blogs/study-abroad-consultants-bangalore",
-  "/blogs/unlock-your-true-potential",
-  "/blogs/best-admission-consultants-in-bangalore",
-  "/blogs/best-education-consultants-in-india",
-  "/blogs/best-mbbs-admission-consultants",
-  "/blogs/best-career-after-12th-in-india",
-  "/blogs/bsc-nursing-colleges-in-bangalore-with-fees",
-  "/blogs/bba-admission-in-bangalore",
-  "/blogs/BCA-WITH-AI-IN-BANGALORE",
-  "/blogs/bcom-with-ACCA-IN-BANGALORE",
-  "/blogs/education-consultants-in-india",
-  "/blogs/hospital-management-course-in-bangalore",
-  "/blogs/llb-admission-in-bangalore",
-  "/blogs/mba-consultant",
-  "/blogs/mha-course-in-bangalore",
-  "/blogs/physiotherapy-colleges-in-bangalore-fee-structure",
+  ...blogRoutes,
+  // "/blogs/study-abroad-consultants-bangalore",
+  // "/blogs/unlock-your-true-potential",
+  // "/blogs/best-admission-consultants-in-bangalore",
+  // "/blogs/best-education-consultants-in-india",
+  // "/blogs/best-mbbs-admission-consultants",
+  // "/blogs/best-career-after-12th-in-india",
+  // "/blogs/bsc-nursing-colleges-in-bangalore-with-fees",
+  // "/blogs/bba-admission-in-bangalore",
+  // "/blogs/BCA-WITH-AI-IN-BANGALORE",
+  // "/blogs/bcom-with-ACCA-IN-BANGALORE",
+  // "/blogs/education-consultants-in-india",
+  // "/blogs/hospital-management-course-in-bangalore",
+  // "/blogs/llb-admission-in-bangalore",
+  // "/blogs/mba-consultant",
+  // "/blogs/mha-course-in-bangalore",
+  // "/blogs/physiotherapy-colleges-in-bangalore-fee-structure",
 ];
 export const apiPublicRoutes = [
   "/api",

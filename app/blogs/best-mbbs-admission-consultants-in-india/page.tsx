@@ -1,8 +1,9 @@
-
 import { blogs } from "../blog-data/blogs";
-import EducationConsultantsIndiaPage from "./EducationConsultantsIndiaPage";
+import MBBSAdmissionConsultants from "./MBBSAdmissionConsultants";
 
-const route = "best-education-consultants-in-india";
+
+
+const route = "best-mbbs-admission-consultants-in-india";
 const blog = blogs.find((b) => b.slug === route);
 
 export const metadata = {
@@ -29,6 +30,6 @@ export const metadata = {
     type: "website",
   },
 };
-export default function EducationConsultantsIndia() {
-  return <EducationConsultantsIndiaPage />;
+export default function MBBSAdmissionConsultantsPage() {
+  return <MBBSAdmissionConsultants />;
 }
