@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import { motion } from "framer-motion";
-import { blogs } from "./data/blogs";
+import { blogs } from "./blog-data/blogs";
 import { ArrowRight } from "lucide-react";
 
 export default function BlogDashboardPage() {
@@ -58,10 +58,10 @@ export default function BlogDashboardPage() {
                 >
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg md:text-xl font-semibold line-clamp-2 group-hover:text-primary transition-colors">
-                      {blog.title}
+                      {blog.contentTitle}
                     </CardTitle>
                     <CardDescription className="text-muted-foreground line-clamp-3 mt-2">
-                      {blog.content.substring(0, 150) + "..."}
+                      {blog.contentDescription.substring(0, 150) + "..."}
                     </CardDescription>
                   </CardHeader>
 
