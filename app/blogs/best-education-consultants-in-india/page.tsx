@@ -1,6 +1,6 @@
 
-import { blogs } from "../blog-data/blogs";
 import EducationConsultantsIndiaPage from "./EducationConsultantsIndiaPage";
+import { blogs } from "../blog-data/blogs";
 
 const route = "best-education-consultants-in-india";
 const blog = blogs.find((b) => b.slug === route);
