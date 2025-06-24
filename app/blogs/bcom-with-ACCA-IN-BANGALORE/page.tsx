@@ -4,9 +4,34 @@ import KpmgBenefits from "./components/KpmgBenefits";
 import ProgramIntro from "./components/ProgramIntro";
 import StudentTestimonials from "./components/StudentTestimonials";
 import WhyBangalore from "./components/WhyBangalore";
+
+import { blogs } from "../blog-data/blogs";
+
+const route = "bcom-with-ACCA-IN-BANGALORE";  
+const blog = blogs.find((b) => b.slug === route);
+
 export const metadata = {
   alternates: {
-    canonical: "https://www.danstar.in/blogs/bcom-with-ACCA-IN-BANGALORE",
+    canonical: `https://danstar.in/blogs/${route}`,
+  },
+  title: blog?.title,
+  description: blog?.description,
+  keywords: blog?.keywords.join(", "),
+  openGraph: {
+    title: blog?.title,
+    description: blog?.description,
+    url: `https://danstar.in/blogs/${route}`,
+    siteName: "Danstar",
+    images: [
+      {
+        url: "https://danstar.in/images/danstar-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Danstar Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
 };
 export default function BComACCAKPMG() {

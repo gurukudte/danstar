@@ -27,19 +27,26 @@ export const blogs: Blog[] = [
       "Career counselling is a structured process that helps individuals understand their personality, skills, and interests—and align them with suitable career paths. Whether you're a student in Class 10 or a software engineer planning a switch, expert career guidance in Bangalore can make all the difference.",
   },
   {
-    slug: "study-abroad-consultants-bangalore",
-    title: "Study Abroad Consultants in Bangalore | Call - 9740568622",
+    slug: "best-consultancy-in-bangalore-for-abroad-studies",
+    title: "Best Consultancy in Bangalore for Abroad Studies - Consultants",
     description:
-      "Explore the world with top study abroad consultants in Bangalore. Get expert guidance for your international education journey. Call now!",
+      "Looking to study overseas? Connect with the best consultancy in Bangalore for abroad studies. Trusted study abroad consultants Bangalore for your dream career!",
     keywords: [
-      "study abroad consultants in bangalore",
+      "study abroad consultants bangalore",
+      "best consultancy in bangalore for abroad studies",
+      "consultancy for abroad studies in bangalore",
+      "best overseas consultancy in bangalore",
+      "abroad education consultants in bangalore",
+      "top study abroad consultants in bangalore",
+      "overseas education consultants bangalore",
+      "study abroad consultancy services bangalore",
       "best study abroad consultants in bangalore",
-      "study abroad consultancy in bangalore",
+      "foreign education consultants in bangalore",
     ],
     contentTitle:
-      "Study Abroad Consultants in Bangalore: Your Gateway to Global Education", 
+      "Study Abroad Consultants in Bangalore: Your Gateway to Global Education",
     contentDescription:
-      "Studying abroad is a dream for many students, offering not just academic excellence but also cultural exposure and personal growth. However, the process can be overwhelming, from choosing the right course and university to understanding visa requirements. This is where **study abroad consultants in Bangalore** come into play, providing expert guidance to make your international education journey smooth and successful.",  
+      "Studying abroad is a dream for many students, offering not just academic excellence but also cultural exposure and personal growth. However, the process can be overwhelming, from choosing the right course and university to understanding visa requirements. This is where **study abroad consultants in Bangalore** come into play, providing expert guidance to make your international education journey smooth and successful.",
   },
   {
     slug: "best-educational-consultants-in-bangalore",
@@ -76,13 +83,23 @@ export const blogs: Blog[] = [
   },
   {
     slug: "education-consultants-in-india",
+    title: "Best Education Consultants in India | Consultants in India",
+    description:
+      "Plan your global education with the best education consultants in India. Trusted education consultants in India guiding you to top universities worldwide.",
+    keywords: [
+      "education consultants in india",
+      "best education consultants in india",
+      "admission consultants in india",
+      "higher education consultants in india",
+      "study abroad consultants in india",
+      "career counselling in india",
+      "college admission consultants in india",
+      "top education consultants in india",
+      "overseas education consultants in india",
+      "academic consultancy services in india",
+    ],
     contentTitle:
       "Best Education Consultants in India: Your Trusted Pathway to Success",
-    keywords: [
-      "study abroad consultants bangalore",
-      "best consultancy in bangalore for abroad studies",
-      "consultancy for abroad studies in bangalore",
-    ],
     contentDescription:
       "In a rapidly globalizing world, choosing the right academic path is more critical—and more confusing—than ever. Students and parents alike often feel overwhelmed by the myriad of choices in courses, colleges, entrance exams, scholarships, and study abroad destinations. This is where **education consultants in India** come in as game-changers",
   },
@@ -144,78 +161,87 @@ export const blogs: Blog[] = [
   },
   {
     slug: "llb-admission-in-bangalore",
+    title: "Best LLB Admission in Bangalore | LLB Admission Consultants",
+    description:
+      "Secure your future in law with LLB admission in Bangalore. Apply now to top colleges and start your journey toward a successful legal career today!",
+    keywords: ["llb admission in bangalore"],
     contentTitle:
       "LLB Admission in Bangalore – Your Ultimate Guide to a Legal Career in 2025! ⚖️",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
     contentDescription:
       "Are you passionate about justice, human rights, or becoming the next legal eagle of India? If yes, then there’s no better time than now to pursue an LLB admission in Bangalore, one of India’s top education hubs! ⚖️📚",
   },
   {
     slug: "physiotherapy-colleges-in-bangalore-fee-structure",
+    title: "Best Physiotherapy Colleges in Bangalore Fee Structure",
+    description:
+      "Explore top physiotherapy colleges in Bangalore fee structure details. Find affordable, quality programs and start your career in healthcare today!",
     contentTitle:
       "Physiotherapy Colleges in Bangalore Fee Structure 2025 – What You Need to Know!",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
+    keywords: ["physiotherapy colleges in bangalore fee structure"],
     contentDescription:
       "Are you dreaming of becoming a licensed physiotherapist in India? Looking for a career that lets you heal with your hands and help lives move again? Then it’s time to explore one of the most in-demand healthcare courses — BPT (Bachelor of Physiotherapy)!",
   },
   {
     slug: "hospital-management-course-in-bangalore",
+    title: "Best Hospital Management Course in Bangalore - 9740568622",
+    description:
+      "Join a top hospital management course in Bangalore or explore a hospital administration course in Bangalore to build a strong career in healthcare leadership.",
+    keywords: [
+      "hospital management course in bangalore",
+      "hospital administration course in bangalore",
+    ],
     contentTitle:
       "Build Your Future in Healthcare! Top Hospital Management & Administration Courses in Bangalore 🌟",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
     contentDescription:
       " Are you passionate about healthcare but don’t want to become a doctor or nurse? Looking for a high-demand, high-growth career that blends healthcare with management? Then a hospital management course in Bangalore or a hospital administration course in Bangalore might be your perfect match! 💼🏥",
   },
   {
     slug: "mha-course-in-bangalore",
+    title: "Best MHA Course in Bangalore | Call Now - 9740568622",
+    description:
+      "Advance your healthcare career with an MHA course in Bangalore. Enroll now in top colleges offering expert training in hospital and health administration.",
+    keywords: ["mha course in bangalore"],
     contentTitle:
       "🎓 MHA Course in Bangalore – The Gateway to a High-Paying Healthcare Career! 🚑💼",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
     contentDescription:
       "Are you passionate about healthcare but don’t want to wear a stethoscope? Dreaming of a career that combines leadership, management, and healthcare? Then an MHA course in Bangalore is your golden ticket to success! 💥",
   },
   {
-    slug: "mba-consultant",
+    slug: "mba-and-mbbs-consultant",
+    title: "Mba consultant - Mbbs abroad consultants | Mbbs consultant",
+    description:
+      "Get expert guidance from top MBA consultant and MBBS consultant. Trusted MBBS abroad consultants to help you secure admission to top global universities.",
+    keywords: [
+      "mba consultant",
+      "mbbs abroad consultants",
+      "mbbs overseas consultants",
+      "mba admission consultants",
+      "mbbs consultant",
+    ],
     contentTitle:
       "🎓 Unlock Your Dream Career with the Right MBA & MBBS Consultants – Your Complete Guide to Success! ",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
     contentDescription:
       "In today’s fast-paced, competitive world, choosing the right career path is a life-changing decision. Whether you're planning to pursue an MBA from a prestigious university or aiming to become a doctor with an MBBS degree from abroad, expert guidance is the key to making smart choices. This is where MBA consultants, MBBS abroad consultants, and MBBS overseas consultants come in – professionals who can shape your career and future. ",
   },
   {
     slug: "bcom-with-ACCA-IN-BANGALORE",
+    title: "BCOM WITH ACCA IN BANGALORE | KPMG IN BANGALORE",
+    description:
+      "Boost your career with BCOM with ACCA in Bangalore or choose BCOM with KPMG in Bangalore for expert training and global opportunities. Apply now!",
     contentTitle:
       "🎯 BCom with ACCA or KPMG in Bangalore – The Smartest Career Move in 2025!",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
+    keywords: ["BCOM WITH ACCA IN BANGALORE", "BCOM WITH KPMG IN BANGALORE"],
     contentDescription:
       "If you're a commerce student thinking about your future, listen up! Regular BCom degrees are great, but what if you could upgrade your BCom and get global exposure, top job placements, and international certifications – all while studying in Bangalore? ",
   },
   {
     slug: "BCA-WITH-AI-IN-BANGALORE",
+    title: "BEST BCA WITH AI IN BANGALORE | Call - 9740568622",
+    description:
+      "Upgrade your tech skills with BCA with AI in Bangalore – blend computer science and AI to build a future-ready career. Enroll today for top opportunities!",
+    keywords: ["BCA WITH AI IN BANGALORE"],
     contentTitle:
       "Future-Proof Your Career with BCA with AI in Bangalore – 2025 Admissions Open!",
-    keywords: [
-      "education consultants in india",
-      "best education consultants in india",
-    ],
     contentDescription:
       "Are you fascinated by Artificial Intelligence? Want to build apps, bots, or even your own AI like ChatGPT someday? Then don’t settle for an ordinary degree. Say hello to the future: BCA with AI in Bangalore – the hottest course that’s blending Computer Applications with the power of Artificial Intelligence!",
   },
