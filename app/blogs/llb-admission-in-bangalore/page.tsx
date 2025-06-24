@@ -11,9 +11,33 @@ import AdmissionSteps from "./components/AdmissionSteps";
 import CollegeCard from "./components/CollegeCard";
 import CareerPathways from "./components/CareerPathways";
 import EligibilityCriteria from "./components/EligibilityCriteria";
+import { blogs } from "../blog-data/blogs";
+
+const route = "llb-admission-in-bangalore";
+const blog = blogs.find((b) => b.slug === route);
+
 export const metadata = {
   alternates: {
-    canonical: "https://www.danstar.in/blogs/llb-admission-in-bangalore",
+    canonical: `https://danstar.in/blogs/${route}`,
+  },
+  title: blog?.title,
+  description: blog?.description,
+  keywords: blog?.keywords.join(", "),
+  openGraph: {
+    title: blog?.title,
+    description: blog?.description,
+    url: `https://danstar.in/blogs/${route}`,
+    siteName: "Danstar",
+    images: [
+      {
+        url: "https://danstar.in/images/danstar-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Danstar Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
 };
 function LLBAdmissionBangalore() {

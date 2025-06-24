@@ -5,10 +5,34 @@ import CareerScope from "./components/CareerScope";
 import CollegeListing from "./components/CollegeListing";
 import FeeStructure from "./components/FeeStructure";
 import HeroSection from "./components/HeroSection";
+
+import { blogs } from "../blog-data/blogs";
+
+const route = "physiotherapy-colleges-in-bangalore-fee-structure";
+const blog = blogs.find((b) => b.slug === route);
+
 export const metadata = {
   alternates: {
-    canonical:
-      "https://www.danstar.in/blogs/physiotherapy-colleges-in-bangalore-fee-structure",
+    canonical: `https://danstar.in/blogs/${route}`,
+  },
+  title: blog?.title,
+  description: blog?.description,
+  keywords: blog?.keywords.join(", "),
+  openGraph: {
+    title: blog?.title,
+    description: blog?.description,
+    url: `https://danstar.in/blogs/${route}`,
+    siteName: "Danstar",
+    images: [
+      {
+        url: "https://danstar.in/images/danstar-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Danstar Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
 };
 export default function PhysiotherapyColleges() {
