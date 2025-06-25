@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Download, ArrowRight, Trophy, Calendar, Monitor } from "lucide-react";
+import { ArrowRight, Trophy, Calendar, Monitor } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 export default function HeroSection() {
   const images = [
     {
-      src: "/images/7.jpg",
+      src: "/images/7.png",
       alt: "PGDM Healthcare Management with AI specialization",
       overlayText:
         "India's first Post Graduate Diploma in Healthcare Management with AI specialization",
@@ -51,14 +51,14 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
+    <section className="relative py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Left Content - Text */}
-          <div className="lg:w-1/2 space-y-8">
+          <div className="lg:w-1/2 space-y-6 md:space-y-8">
             {/* Logo and Program Name */}
             <div className="flex flex-col justify-center items-start gap-3">
-              <div className="flex items-center gap-8 mb-4">
+              <div className="flex flex-wrap items-center gap-4 md:gap-8 mb-2 md:mb-4">
                 {[
                   {
                     src: "/logos/jagsom.svg",
@@ -79,23 +79,23 @@ export default function HeroSection() {
                     alt={logo.alt}
                     width={100}
                     height={40}
-                    className="h-9 w-auto"
+                    className="h-7 md:h-9 w-auto"
                   />
                 ))}
               </div>
-              <h2 className="text-5xl font-bold text-gray-900 tracking-tight">
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">
                 PGDM <span className="text-blue-600">EDGE</span> - Healthcare
               </h2>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-2xl font-semibold text-gray-900 leading-tight">
+            <h1 className="text-xl md:text-2xl font-semibold text-gray-900 leading-tight">
               Lead the Future of Healthcare with AI, digital innovation, and
               strategic leadership skills
             </h1>
 
             {/* Rankings and Details */}
-            <div className="text-2xl font-semibold text-gray-900 leading-tight">
+            <div className="text-lg md:text-2xl font-semibold text-gray-900 leading-tight">
               <h2>
                 India's top-ranked B-school (Top 30, Business Today), Globally
                 ranked by QS in Healthcare
@@ -103,71 +103,69 @@ export default function HeroSection() {
             </div>
 
             {/* Program Duration */}
-            <div className="grid grid-cols-3 gap-4 max-w-xl">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-xl">
               {[
                 {
-                  icon: <Calendar className="h-10 w-10 text-blue-600" />,
+                  icon: (
+                    <Calendar className="h-8 md:h-10 w-8 md:w-10 text-blue-600" />
+                  ),
                   label: "24 Months",
                 },
                 {
-                  icon: <Trophy className="h-10 w-10 text-blue-600" />,
+                  icon: (
+                    <Trophy className="h-8 md:h-10 w-8 md:w-10 text-blue-600" />
+                  ),
                   label: "Full Time PGDM",
                 },
                 {
-                  icon: <Monitor className="h-10 w-10 text-blue-600" />,
+                  icon: (
+                    <Monitor className="h-8 md:h-10 w-8 md:w-10 text-blue-600" />
+                  ),
                   label: "Virtual+On campus",
                 },
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="bg-white p-4 rounded-lg shadow-sm border border-gray-100"
+                  className="bg-white p-3 md:p-4 rounded-lg shadow-sm border border-gray-100"
                 >
-                  <div className="flex flex-col justify-start items-start gap-2">
+                  <div className="flex flex-col justify-start items-start gap-1 md:gap-2">
                     {item.icon}
-                    <span className="text-md font-bold">{item.label}</span>
+                    <span className="text-sm md:text-md font-bold">
+                      {item.label}
+                    </span>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
               <Link
                 href="https://application-form.keeplearning.live/pg-application-form?utm_source=tep&utm_medium=vn&utm_campaign=danstar"
                 passHref
-                legacyBehavior
               >
                 <Button
-                  asChild
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg flex items-center gap-2 shadow-lg hover:shadow-blue-200/50 transition-all cursor-pointer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg flex items-center gap-2 shadow-lg hover:shadow-blue-200/50 transition-all cursor-pointer"
                 >
-                  <a target="_blank" rel="noopener noreferrer">
+
                     Apply Now
-                    <ArrowRight className="h-5 w-5" />
-                  </a>
+                    <ArrowRight className="h-4 md:h-5 w-4 md:w-5" />
                 </Button>
               </Link>
-              <Button
-                variant="outline"
-                className="px-8 py-6 text-lg border-blue-600 text-blue-600 hover:bg-blue-50 flex items-center gap-2 transition-all"
-              >
-                <Download className="h-5 w-5" />
-                Download Brochure
-              </Button>
             </div>
 
             {/* Deadline Notice */}
-            <div className="flex items-center gap-2 pt-2">
-              <div className="h-3 w-3 rounded-full bg-red-500 animate-pulse"></div>
-              <p className="text-red-600 font-medium">
+            <div className="flex items-center gap-2 pt-1 md:pt-2">
+              <div className="h-2 md:h-3 w-2 md:w-3 rounded-full bg-red-500 animate-pulse"></div>
+              <p className="text-red-600 font-medium text-sm md:text-base">
                 Application closes soon
               </p>
             </div>
           </div>
 
           {/* Right Content - Image Carousel */}
-          <div className="lg:w-1/2 mt-8 lg:mt-0">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl h-[500px]">
+          <div className="lg:w-1/2 mt-6 md:mt-8 lg:mt-0 w-full">
+            <div className="relative rounded-xl overflow-hidden shadow-2xl h-[300px] sm:h-[400px] md:h-[500px]">
               {images.map((image, index) => (
                 <div
                   key={index}
@@ -193,8 +191,8 @@ export default function HeroSection() {
                     priority={index === 0}
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-6">
-                    <p className="text-white text-xl font-medium">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-4 md:p-6">
+                    <p className="text-white text-base md:text-xl font-medium">
                       {image.overlayText}
                     </p>
                   </div>
@@ -203,14 +201,14 @@ export default function HeroSection() {
             </div>
 
             {/* Navigation dots */}
-            <div className="flex justify-center mt-4 space-x-2">
+            <div className="flex justify-center mt-3 md:mt-4 space-x-2">
               {images.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
+                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
                     index === currentIndex
-                      ? "bg-blue-600 w-6"
+                      ? "bg-blue-600 w-4 md:w-6"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}

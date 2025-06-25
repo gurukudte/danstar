@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import "./widget.css";
 
 export default function WidgetLoader() {
   useEffect(() => {
@@ -14,16 +15,16 @@ export default function WidgetLoader() {
     document.body.appendChild(widgetDiv);
 
     // Load script
-    // const script = document.createElement("script");
-    // script.type = "text/javascript";
-    // script.async = true;
-    // script.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
-    // document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
+    document.body.appendChild(script);
 
     // Cleanup
     return () => {
       document.body.removeChild(widgetDiv);
-      // document.body.removeChild(script);
+      document.body.removeChild(script);
     };
   }, []);
 

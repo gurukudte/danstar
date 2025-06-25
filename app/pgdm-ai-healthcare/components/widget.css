@@ -1,0 +1,46 @@
+/* styles/widget.css */
+
+/* Container styling */
+.npf_wgts {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    margin: 2rem auto !important;
+    max-width: 800px !important;
+    overflow: hidden !important;
+  }
+  
+  /* Form header */
+  .npf_wgts .npf_form-header {
+    background: #2563eb !important;
+    color: white !important;
+    padding: 1.5rem !important;
+  }
+  
+  /* Form fields */
+  .npf_wgts .npf_form-field {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Input fields */
+  .npf_wgts input, 
+  .npf_wgts select, 
+  .npf_wgts textarea {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1rem !important;
+    width: 100% !important;
+  }
+  
+  /* Submit button */
+  .npf_wgts .npf_form-submit {
+    background: #2563eb !important;
+    border-radius: 8px !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.5rem !important;
+    transition: background 0.2s ease !important;
+  }
+  
+  .npf_wgts .npf_form-submit:hover {
+    background: #1d4ed8 !important;
+  }
