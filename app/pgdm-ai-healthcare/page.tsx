@@ -1,13 +1,11 @@
 
 import HeroSection from "./components/HeroSection";
 import { SpecializationsSection } from "./components/SpecializationsSection";
-import { LearningOutcomes } from "./components/LearningOutcomes";
-import { ProgramExperience } from "./components/ProgramExperience";
-import CampusImmersions from "./components/CampusImmersions";
-import CurriculumComponent from "./components/CurriculumComponent";
 import WidgetLoader from "./components/WidgetLoader";
 import { Metadata } from "next";
 import { CareerEngine } from "./components/CareerEngine";
+import { PlacementStories } from "./components/PlacementStories";
+import { HealthcareExperience } from "./components/ProgramExperience";
 
 export const metadata: Metadata = {
   title: "PGDM EDGE in Healthcare Management with AI Specialization | JAGSoM | Danstar | Keep Learning",
@@ -36,11 +34,9 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
       <SpecializationsSection />
-      <LearningOutcomes />
-      <CurriculumComponent />
-      <CampusImmersions />
       <CareerEngine />
-      <ProgramExperience />
+      <HealthcareExperience />
+      <PlacementStories />
       <WidgetLoader />
     </div>
   );
