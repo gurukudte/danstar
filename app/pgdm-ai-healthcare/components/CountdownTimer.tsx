@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import ContactFormDialog from "./ContactForm";
+import Link from "next/link";
 
 export function CountdownTimer() {
   const calculateTimeLeft = () => {
@@ -49,16 +49,18 @@ export function CountdownTimer() {
               seats available for the upcoming batch.
             </p>
           </div>
-          <ContactFormDialog
-            buttonProp={
-              <Button
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-6 px-8 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-                size="lg"
-              >
-                Apply Now
-              </Button>
-            }
-          />
+          <Link
+            href="https://application-form.keeplearning.live/pg-application-form?utm_source=tep&utm_medium=vn&utm_campaign=danstar"
+            passHref
+          >
+            <Button
+              className="cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-6 px-8 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              size="lg"
+            >
+              Apply Now
+            </Button>
+          </Link>
+          
         </div>
 
         {/* Right Timer - Premium Redesign */}
