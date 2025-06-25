@@ -1,6 +1,7 @@
+"use client"
 import { FiUsers, FiCpu, FiMic, FiBriefcase, FiAward } from "react-icons/fi";
-import ContactFormDialog from "./ContactForm";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const CampusImmersions = () => {
   return (
@@ -105,13 +106,20 @@ const CampusImmersions = () => {
         <p className="text-xl font-medium text-gray-800 mb-6">
           Take Your First Step Towards Global Career Excellence today
         </p>
-        <ContactFormDialog
-          buttonProp={
-            <Button className=" cursor-pointer px-8 py-3 text-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
-              Enquire Now
-            </Button>
-          }
-        />
+
+        <div className="flex justify-center items-center gap-4">
+
+        <Link
+          href="https://application-form.keeplearning.live/pg-application-form?utm_source=tep&utm_medium=vn&utm_campaign=danstar"
+          passHref
+        >
+          <Button
+            className="bg-blue-600 max-w-min hover:bg-blue-700 text-white px-8 py-6 text-lg flex items-center gap-2 shadow-lg hover:shadow-blue-200/50 transition-all cursor-pointer"
+          >
+            Enquire Now
+          </Button>
+        </Link>
+        </div>
       </div>
     </div>
   );

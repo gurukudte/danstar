@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import AdmissionPopup from "./components/AdmissionPopup";
 import { GA_TRACKING_ID } from "@/lib/gtag";
 import Script from "next/script";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import { AppLayout } from "./AppLayout";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -200,11 +199,14 @@ export default function RootLayout({
           `}
         </Script>
         <noscript>
-          <img
-            height="1"
-            width="1"
+          <Image
+            height={1}
+            width={1}
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=1397752228092607&ev=PageView&noscript=1"
+            alt=""
+            unoptimized
+            priority
           />
         </noscript>
       </head>
@@ -213,10 +215,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <NavBar />
-          {children}
-          <Footer />
-          <AdmissionPopup />
+          <AppLayout>{children}</AppLayout>
         </Providers>
 
         {/* GTM Fallback */}

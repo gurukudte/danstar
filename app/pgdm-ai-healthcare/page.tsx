@@ -7,9 +7,10 @@ import CampusImmersions from "./components/CampusImmersions";
 import CurriculumComponent from "./components/CurriculumComponent";
 import WidgetLoader from "./components/WidgetLoader";
 import { Metadata } from "next";
+import { CareerEngine } from "./components/CareerEngine";
 
 export const metadata: Metadata = {
-  title: "PGDM EDGE in Healthcare Management with AI Specialization | JAGSoM",
+  title: "PGDM EDGE in Healthcare Management with AI Specialization | JAGSoM | Danstar | Keep Learning",
   description:
     "India's first Post Graduate Diploma in Healthcare Management with AI specialization. Develop skills in healthcare operations, data analytics, quality compliance, and leadership. 50+ partner institutions, 1000+ professionals trained.",
   keywords: [
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     "Healthcare Commercial Tracks",
   ],
   alternates: {
-    canonical: "https://www.danstar.in/courses/pgdm-ai-data-analytics",
+    canonical: "https://www.danstar.in/pgdm-ai-healthcare",
   },
 };
 
@@ -37,8 +38,9 @@ export default function Home() {
       <SpecializationsSection />
       <LearningOutcomes />
       <CurriculumComponent />
-      <ProgramExperience />
       <CampusImmersions />
+      <CareerEngine />
+      <ProgramExperience />
       <WidgetLoader />
     </div>
   );
