@@ -14,11 +14,10 @@ export default function PricingOptions() {
     "standard"
     );
     const downloadBrochure = () => {
-      // Replace with your actual brochure URL
-      const brochureUrl = "/brochure.pdf";
+      const brochureUrl = "/docs/Healthcare-Brochure.pdf";
       const link = document.createElement("a");
       link.href = brochureUrl;
-      link.download = "PGDM-Healthcare-Brochure.pdf";
+      link.download = "Healthcare-Brochure.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
