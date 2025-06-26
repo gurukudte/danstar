@@ -116,7 +116,7 @@ export function PlacementStories() {
             passHref
           >
             <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
-              Explore Our Programs
+              Apply Now
               <ArrowRight className="ml-2 w-4 h-4" />
             </button>
           </Link>
