@@ -5,13 +5,14 @@ import TopInstitutes from "./components/TopInstitutes";
 import WhatIsMHA from "./components/WhatIsMHA";
 
 import { blogs } from "../blog-data/blogs";
+import { domain } from "../utils/constants";
 
 const route = "mha-course-in-bangalore";  
 const blog = blogs.find((b) => b.slug === route);
 
 export const metadata = {
   alternates: {
-    canonical: `https://danstar.in/blogs/${route}`,
+    canonical: `${domain}/${route}`,
   },
   title: blog?.title,
   description: blog?.description,
@@ -19,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: blog?.title,
     description: blog?.description,
-    url: `https://danstar.in/blogs/${route}`,
+    url: `${domain}/${route}`,
     siteName: "Danstar",
     images: [
       {

@@ -7,13 +7,14 @@ import SuccessStories from "./components/SuccessStories";
 import WhyConsultants from "./components/WhyConsultants";
 
 import { blogs } from "../blog-data/blogs";
+import { domain } from "../utils/constants";
 
 const route = "mba-and-mbbs-consultant";  
 const blog = blogs.find((b) => b.slug === route);
 
 export const metadata = {
   alternates: {
-    canonical: `https://danstar.in/blogs/${route}`,
+    canonical: `${domain}/${route}`,
   },
   title: blog?.title,
   description: blog?.description,
@@ -21,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: blog?.title,
     description: blog?.description,
-    url: `https://danstar.in/blogs/${route}`,
+    url: `${domain}/${route}`,
     siteName: "Danstar",
     images: [
       {
