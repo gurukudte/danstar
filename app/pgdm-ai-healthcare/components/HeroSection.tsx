@@ -115,7 +115,7 @@ export default function HeroSection() {
                   icon: (
                     <Trophy className="h-6 sm:h-8 w-6 sm:w-8 text-blue-600" />
                   ),
-                  label: "Full Time PGDM",
+                  label: "Full Fledged PGDM",
                 },
                 {
                   icon: (

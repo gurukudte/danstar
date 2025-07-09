@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function CountdownTimer() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-07-01T10:20:00");
+    const targetDate = new Date("2025-07-25T23:59:00");
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
 
