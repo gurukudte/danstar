@@ -10,10 +10,10 @@ const blogRoutes = blogs.map((blog) => `/blogs/${blog.slug}`);
 export const publicRoutes = [
   "/",
   "/about",
-  "/blogs",
   "/courses",
   "/services",
-  "/pgdm-ai-healthcare",
+  "/blogs",
+  // "/pgdm-ai-healthcare",
   ...blogRoutes,
 ];
 export const apiPublicRoutes = [

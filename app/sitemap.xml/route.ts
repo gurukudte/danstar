@@ -1,6 +1,6 @@
 import { publicRoutes } from "@/routes";
 
-export function GET() {
+export async function GET() {
   const domain = "https://www.danstar.in";
   const lastmod = new Date().toISOString();
 
