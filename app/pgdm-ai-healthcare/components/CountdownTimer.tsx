@@ -5,10 +5,9 @@ import Link from "next/link";
 
 export function CountdownTimer() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-07-25T23:59:00");
+    const targetDate = new Date("2025-10-09T23:59:00");
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
-
     if (difference <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
@@ -40,10 +39,22 @@ export function CountdownTimer() {
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Secure your spot now!
             </h3>
-            <p className="text-red-500 text-sm md:text-base font-medium flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
-              Application closes soon
-            </p>
+            <div className="mt-3 sm:mt-4 bg-blue-50 border border-blue-100 rounded-lg p-3 sm:p-4 shadow-sm max-w-sm">
+              <ul className="space-y-1">
+                <li className="text-gray-800 text-sm sm:text-base">
+                  <span className="font-semibold text-blue-700">
+                    Admission closes:
+                  </span>
+                  09-Oct-2025
+                </li>
+                <li className="text-gray-800 text-sm sm:text-base">
+                  <span className="font-semibold text-blue-700">
+                    Classes start:
+                  </span>{" "}
+                  11-Oct-2025
+                </li>
+              </ul>
+            </div>
             <p className="text-gray-600 text-sm md:text-base">
               Don't miss this opportunity to join our exclusive program. Limited
               seats available for the upcoming batch.
