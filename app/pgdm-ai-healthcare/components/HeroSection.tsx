@@ -152,11 +152,21 @@ export default function HeroSection() {
             </div>
 
             {/* Deadline Notice */}
-            <div className="flex items-center gap-2 pt-1">
-              <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse"></div>
-              <p className="text-red-600 font-medium text-xs sm:text-sm">
-                Application closes soon
-              </p>
+            <div className="mt-3 sm:mt-4 bg-blue-50 border border-blue-100 rounded-lg p-3 sm:p-4 shadow-sm max-w-sm">
+              <ul className="space-y-1">
+                <li className="text-gray-800 text-sm sm:text-base">
+                  <span className="font-semibold text-blue-700">
+                    Admission closes:
+                  </span>{" "}
+                  09-Oct-2025
+                </li>
+                <li className="text-gray-800 text-sm sm:text-base">
+                  <span className="font-semibold text-blue-700">
+                    Classes start:
+                  </span>{" "}
+                  11-Oct-2025
+                </li>
+              </ul>
             </div>
           </div>
 

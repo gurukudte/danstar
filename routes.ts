@@ -13,7 +13,7 @@ export const publicRoutes = [
   "/courses",
   "/services",
   "/blogs",
-  // "/pgdm-ai-healthcare",
+  "/pgdm-ai-healthcare",
   ...blogRoutes,
 ];
 export const apiPublicRoutes = [
