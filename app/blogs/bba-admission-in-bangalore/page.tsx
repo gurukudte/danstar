@@ -107,7 +107,7 @@ export default function BBAAdmissionBangalore() {
       {/* Hero Section */}
       <section className="bg-indigo-50 rounded-xl p-8 mb-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-4">
-          BBA Admission in Bangalore: Your Gateway to Top Colleges in 2025
+          BBA Admission in Bangalore: Your Gateway to Top Colleges in 2026
         </h1>
         <p className="text-lg text-gray-700 max-w-4xl mx-auto">
           Complete guide to securing BBA admission in Bangalore's top colleges

@@ -56,7 +56,7 @@ function LLBAdmissionBangalore() {
         <section className="space-y-12">
           <div className="mx-auto max-w-4xl text-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-              Top Law Colleges in Bangalore (2025)
+              Top Law Colleges in Bangalore (2026)
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Premier institutions shaping the next generation of legal

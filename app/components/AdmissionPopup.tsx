@@ -43,7 +43,7 @@ export default function AdmissionPopup() {
           {/* Header */}
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-red-700">
-              🎓✨ ADMISSIONS OPEN – 2025 ✨🎓
+              🎓✨ ADMISSIONS OPEN – 2026 ✨🎓
             </h2>
             <p className="text-lg md:text-xl mt-2 text-gray-800">
               🎯 Join Top Colleges in Bangalore!

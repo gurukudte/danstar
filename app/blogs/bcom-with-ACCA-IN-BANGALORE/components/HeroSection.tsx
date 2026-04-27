@@ -23,7 +23,7 @@ export default function HeroSection() {
           <h1 className="text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl">
             <span className="block">BCom with ACCA/KPMG</span>
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-background to-primary-foreground">
-              Bangalore 2025
+              Bangalore 2026
             </span>
           </h1>
           <p className="text-xl text-white md:text-2xl">

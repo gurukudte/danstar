@@ -24,7 +24,7 @@ export default function FeeStructure() {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent">
             Fee Structure
           </span>{" "}
-          for 2025
+          for 2026
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
           Transparent breakdown of BPT course fees across college categories

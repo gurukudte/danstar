@@ -137,7 +137,7 @@ export const blogs: Blog[] = [
     title: "Bsc Nursing Colleges in Bangalore with Fees | 9740568622",
     description:
       "Find top BSc Nursing colleges in Bangalore with fees details. Compare courses and plan your future with accurate BSc Nursing fees Bangalore info today!",
-    contentTitle: "Top BSc Nursing Colleges in Bangalore with Fees: 2025 Guide",
+    contentTitle: "Top BSc Nursing Colleges in Bangalore with Fees: 2026 Guide",
     keywords: [
       "bsc nursing colleges in bangalore with fees",
       "bsc nursing fees bangalore",
@@ -151,7 +151,7 @@ export const blogs: Blog[] = [
     description:
       "Secure your BBA admission in Bangalore with ease! Explore top BBA colleges in Bangalore direct admission options and kickstart your management journey.",
     contentTitle:
-      "BBA Admission in Bangalore: Your Gateway to Top Colleges in 2025",
+      "BBA Admission in Bangalore: Your Gateway to Top Colleges in 2026",
     keywords: [
       "bba admission in bangalore",
       "bba colleges in bangalore direct admission",
@@ -166,7 +166,7 @@ export const blogs: Blog[] = [
       "Secure your future in law with LLB admission in Bangalore. Apply now to top colleges and start your journey toward a successful legal career today!",
     keywords: ["llb admission in bangalore"],
     contentTitle:
-      "LLB Admission in Bangalore – Your Ultimate Guide to a Legal Career in 2025! ⚖️",
+      "LLB Admission in Bangalore – Your Ultimate Guide to a Legal Career in 2026! ⚖️",
     contentDescription:
       "Are you passionate about justice, human rights, or becoming the next legal eagle of India? If yes, then there’s no better time than now to pursue an LLB admission in Bangalore, one of India’s top education hubs! ⚖️📚",
   },
@@ -176,7 +176,7 @@ export const blogs: Blog[] = [
     description:
       "Explore top physiotherapy colleges in Bangalore fee structure details. Find affordable, quality programs and start your career in healthcare today!",
     contentTitle:
-      "Physiotherapy Colleges in Bangalore Fee Structure 2025 – What You Need to Know!",
+      "Physiotherapy Colleges in Bangalore Fee Structure 2026 – What You Need to Know!",
     keywords: ["physiotherapy colleges in bangalore fee structure"],
     contentDescription:
       "Are you dreaming of becoming a licensed physiotherapist in India? Looking for a career that lets you heal with your hands and help lives move again? Then it’s time to explore one of the most in-demand healthcare courses — BPT (Bachelor of Physiotherapy)!",
@@ -229,7 +229,7 @@ export const blogs: Blog[] = [
     description:
       "Boost your career with BCOM with ACCA in Bangalore or choose BCOM with KPMG in Bangalore for expert training and global opportunities. Apply now!",
     contentTitle:
-      "🎯 BCom with ACCA or KPMG in Bangalore – The Smartest Career Move in 2025!",
+      "🎯 BCom with ACCA or KPMG in Bangalore – The Smartest Career Move in 2026!",
     keywords: ["BCOM WITH ACCA IN BANGALORE", "BCOM WITH KPMG IN BANGALORE"],
     contentDescription:
       "If you're a commerce student thinking about your future, listen up! Regular BCom degrees are great, but what if you could upgrade your BCom and get global exposure, top job placements, and international certifications – all while studying in Bangalore? ",
@@ -241,7 +241,7 @@ export const blogs: Blog[] = [
       "Upgrade your tech skills with BCA with AI in Bangalore – blend computer science and AI to build a future-ready career. Enroll today for top opportunities!",
     keywords: ["BCA WITH AI IN BANGALORE"],
     contentTitle:
-      "Future-Proof Your Career with BCA with AI in Bangalore – 2025 Admissions Open!",
+      "Future-Proof Your Career with BCA with AI in Bangalore – 2026 Admissions Open!",
     contentDescription:
       "Are you fascinated by Artificial Intelligence? Want to build apps, bots, or even your own AI like ChatGPT someday? Then don’t settle for an ordinary degree. Say hello to the future: BCA with AI in Bangalore – the hottest course that’s blending Computer Applications with the power of Artificial Intelligence!",
   },
