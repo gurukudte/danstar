@@ -56,7 +56,7 @@ export default function BScNursingBangalore() {
       {/* Hero Section */}
       <section className="bg-blue-50 rounded-xl p-8 mb-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
-          Top BSc Nursing Colleges in Bangalore with Fees: 2025 Guide
+          Top BSc Nursing Colleges in Bangalore with Fees: 2026 Guide
         </h1>
         <p className="text-lg text-gray-700 max-w-4xl mx-auto">
           Comprehensive overview of the best BSc Nursing colleges in Bangalore
@@ -122,7 +122,7 @@ export default function BScNursingBangalore() {
       {/* Fee Structure */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">
-          BSc Nursing Fees in Bangalore: 2025 Overview
+          BSc Nursing Fees in Bangalore: 2026 Overview
         </h2>
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card className="border-blue-200">

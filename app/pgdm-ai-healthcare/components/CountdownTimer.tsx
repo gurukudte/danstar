@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function CountdownTimer() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-10-09T23:59:00");
+    const targetDate = new Date("2026-10-09T23:59:00");
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
     if (difference <= 0) {
@@ -45,13 +45,13 @@ export function CountdownTimer() {
                   <span className="font-semibold text-blue-700">
                     Admission closes:
                   </span>
-                  09-Oct-2025
+                  09-Oct-2026
                 </li>
                 <li className="text-gray-800 text-sm sm:text-base">
                   <span className="font-semibold text-blue-700">
                     Classes start:
                   </span>{" "}
-                  11-Oct-2025
+                  11-Oct-2026
                 </li>
               </ul>
             </div>

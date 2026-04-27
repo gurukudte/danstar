@@ -158,13 +158,13 @@ export default function HeroSection() {
                   <span className="font-semibold text-blue-700">
                     Admission closes:
                   </span>{" "}
-                  09-Oct-2025
+                  09-Oct-2026
                 </li>
                 <li className="text-gray-800 text-sm sm:text-base">
                   <span className="font-semibold text-blue-700">
                     Classes start:
                   </span>{" "}
-                  11-Oct-2025
+                  11-Oct-2026
                 </li>
               </ul>
             </div>
